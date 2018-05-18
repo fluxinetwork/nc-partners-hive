@@ -1,0 +1,32 @@
+// UTILS
+
+@import "utils/easing";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/variables";
+@import "utils/helpers/import";
+
+
+// BASE
+
+@import "base/reset";
+@import "base/layers";
+@import "base/typography";
+
+
+// LAYOUTS
+
+@import "layouts/lib/import";
+
+
+// COMPONENTS
+
+@import "components/lib/import";
+
+
+// SPECIFIC 
+
+@import "specific/homepage";
+@import "specific/header";
+@import "specific/footer";
+@import "specific/content";

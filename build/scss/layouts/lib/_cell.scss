@@ -1,0 +1,47 @@
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : CELL
+
+==========================================================================
+\*======================================================================*/
+
+.l-cell {
+	padding: $space-S;
+
+	@media screen and (min-width: $break-M) {
+		padding: $space-S*$bigger;
+	}
+	
+	@media screen and (min-width: $break-L) {
+		padding: $space-M;
+	}
+}
+
+@mixin largeCell() {
+	padding: $space-L;
+
+	@media screen and (min-width: $break-M) {
+		padding: $space-L*$bigger;
+	}
+
+	@media screen and (min-width: $break-L) {
+		padding: $space-XL;
+	}
+}
+
+.l-largeCell {
+	@include largeCell();
+}
+
+.l-heroCell {
+	padding: $space-XL $space-L;
+
+	@media screen and (min-width: $break-M) {
+		padding: $space-XL*$bigger $space-L*$bigger;
+	}
+
+	@media screen and (min-width: $break-L) {
+		padding: $space-XXL $space-XL;
+	}
+}

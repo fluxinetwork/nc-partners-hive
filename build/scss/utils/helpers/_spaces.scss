@@ -1,0 +1,70 @@
+/*======================================================================*\
+==========================================================================
+
+							UTILS : SPACES
+
+==========================================================================
+\*======================================================================*/
+
+.margin--center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.marginTop--auto {
+	margin-top: auto !important;
+}
+
+.marginRight--auto {
+	margin-right: auto !important;
+}
+
+.marginBottom--auto {
+	margin-bottom: auto !important;
+}
+
+.marginLeft--auto {
+	margin-left: auto !important;
+}
+
+@mixin spaces($space, $suffix) {
+	.padding--#{$suffix} {
+		padding: $space !important;
+	}
+	.paddingTop--#{$suffix} {
+		padding-top: $space !important;
+	}
+	.paddingRight--#{$suffix} {
+		padding-right: $space !important;
+	}
+	.paddingBottom--#{$suffix} {
+		padding-bottom: $space !important;
+	}
+	.paddingLeft--#{$suffix} {
+		padding-left: $space !important;
+	}
+
+	.margin--#{$suffix} {
+		margin: $space !important;
+	}
+	.marginTop--#{$suffix} {
+		margin-top: $space !important;
+	}
+	.marginRight--#{$suffix} {
+		margin-right: $space !important;
+	}
+	.marginBottom--#{$suffix} {
+		margin-bottom: $space !important;
+	}
+	.marginLeft--#{$suffix} {
+		margin-left: $space !important;
+	}
+}
+
+@include spaces(0, 'none');
+@include spaces($space, 'xs');
+@include spaces($space-S, 's');
+@include spaces($space-M, 'm');
+@include spaces($space-L, 'l');
+@include spaces($space-XL, 'xl');
+@include spaces($space-XXL, 'xxl');

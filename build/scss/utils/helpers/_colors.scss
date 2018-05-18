@@ -1,0 +1,29 @@
+/*======================================================================*\
+==========================================================================
+
+							UTILS : COLORS
+
+==========================================================================
+\*======================================================================*/
+
+@mixin colors($color, $suffix) {
+	.c-#{$suffix} {
+		color: $color !important;
+	}
+	.bg-#{$suffix} {
+		background-color: $color !important;
+	}
+}
+
+@include colors($c-main, 'main');
+@include colors($c-accent, 'accent');
+@include colors($c-dark, 'dark');
+@include colors($c-light, 'light');
+@include colors($c-txt, 'txt');
+@include colors($c-valid, 'valid');
+@include colors($c-error, 'error');
+@include colors($c-facebook, 'facebook');
+@include colors($c-twitter, 'twitter');
+@include colors($c-linkedin, 'linkedin');
+@include colors($c-youtube, 'youtube');
+@include colors(#fff, 'white');

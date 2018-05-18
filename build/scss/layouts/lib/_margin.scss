@@ -1,0 +1,44 @@
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : MARGIN
+
+==========================================================================
+\*======================================================================*/
+
+.l-marginTop {
+	margin-top: $vRythm-s;
+
+	@media screen and (min-width: $break-M) {
+		margin-top: $vRythm-m;
+	}
+
+	@media screen and (min-width: $break-L) {
+		margin-top: $vRythm-l;
+	}
+
+	@media screen and (min-width: $break-XL) {
+		margin-top: $vRythm-xl;
+	}
+}
+
+.l-marginBottom {
+	margin-bottom: $vRythm-s;
+
+	@media screen and (min-width: $break-M) {
+		margin-bottom: $vRythm-m;
+	}
+
+	@media screen and (min-width: $break-L) {
+		margin-bottom: $vRythm-l;
+	}
+
+	@media screen and (min-width: $break-XL) {
+		margin-bottom: $vRythm-xl;
+	}
+}
+
+.l-margin {
+	@extend .l-marginTop;
+	@extend .l-marginBottom;
+}

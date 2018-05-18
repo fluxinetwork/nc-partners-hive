@@ -1,0 +1,419 @@
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+//                                MIXINS
+
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+
+//================================================================= LAYOUT
+
+
+// MAX HEIGHT
+
+@mixin maxH($height) {
+  max-height: $height;
+  overflow: hidden;
+}
+
+
+/*
+FLEX
+--
+/*$positions: justify-content & align-items
+If only one value, will be used for the two properties
+Use 'null' to not declare a propertie, ex: flex(center null)
+*/
+
+@mixin flex($positions: null null, $direction: false, $wrap: false) {
+	display: flex;
+
+	@if ( $direction ) {
+		flex-direction: $direction;
+	}
+
+	@if ( $wrap ) {
+		flex-wrap: $wrap;
+	}
+	
+	$positions: unpack-duo($positions);
+
+	$flex-positions: (
+		justify-content: nth($positions, 1),
+		align-items: nth($positions, 2)
+	);
+
+	@each $flex-position, $position in $flex-positions {
+		@if ($position != null) {
+			#{$flex-position}: $position;
+		}
+	}
+}
+
+/*
+FILL
+--
+$mode = 'parent' || 'viewport'
+$fullH fill width AND height
+*/
+
+@mixin fill($mode, $height: false) {
+	@if ($mode == 'viewport') {
+		position: relative;
+		width: 100vw;
+		max-width: 100%;
+		@if ($height != false) {
+			height: 100vh;
+		}
+	}
+	@if ($mode == 'parent') {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		@if ($height != false) {
+			height: 100%;
+		}
+	}
+}
+
+
+// CENTER 
+
+@mixin center($direction: 'xy') {
+	position: absolute;
+
+	@if ($direction == 'x') {
+		left: 50%;
+		transform: translateX(-50%)
+	}
+	
+	@if ($direction == 'y'){
+		top: 50%;
+		transform: translateY(-50%)
+	}
+
+	@if ($direction == 'xy'){
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@if ($direction == 'top'){
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	@if ($direction == 'offtop'){
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@if ($direction == 'bottom'){
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	@if ($direction == 'offbottom'){
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 50%);
+	}
+
+	@if ($direction == 'right'){
+		right: 0;
+		top: 50%;
+	}
+
+	@if ($direction == 'offright'){
+		right: 0;
+		top: 50%;
+		transform: translate(50%, -50%);
+	}
+
+	@if ($direction == 'left'){
+		left: 0;
+		top: 50%;
+	}
+
+	@if ($direction == 'offleft'){
+		left: 0;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+
+// SQUARE
+
+@mixin square($width: null) {
+	@if ($width) {
+		width: $width;
+	}
+
+	&:before {
+	    content: "";
+	    display: block;
+	    padding-top: 100%;
+	}
+}
+
+// ROUND
+
+@mixin round($width: null) {
+	@if ($width) {
+		@include square($width);
+	}
+	@else {
+		@include square();
+	}
+	border-radius: 50%;
+}
+
+
+// RECTANGLE
+
+@mixin rectangle($padding: 60%, $width: null) {
+	@if ($width) {
+		@include square($width);
+	}
+
+	&:before {
+	    content: "";
+	    display: block;
+	    padding-top: $padding;
+	}
+}
+
+
+//================================================================= TYPO
+
+/*
+RESPONSIVE FONT
+--
+https://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps
+*/
+
+@mixin font_size($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      @include make-font-size($fs-font-size);
+    }
+    @else {
+      // If $fs-font-size is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-font-size($fs-font-size);
+      }
+    }
+  }
+}
+
+@mixin make_font-size($fs-font-size) {
+  // If $fs-font-size is a list, include
+  // both font-size and line-height
+  @if type-of($fs-font-size) == "list" {
+    font-size: nth($fs-font-size, 1);
+    @if (length($fs-font-size) > 1) {
+      line-height: nth($fs-font-size, 2);
+    }
+  }
+  @else {
+    font-size: $fs-font-size;
+  }
+}
+
+
+// FONT-SMOOTHING 
+
+@mixin font_smoothing($auto: true) {
+	@if $auto != true {
+		-webkit-font-smoothing: auto;
+		-moz-osx-font-smoothing: auto;
+	}
+	@else {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+
+/*
+ADD WEBFONT
+--
+$path in context of the fonts folder
+*/
+
+@mixin webfont($name, $folder, $slug, $font-weight: 400) {
+	@font-face {
+	    font-family: $name;
+	    src: url('../fonts/'+$folder+'/'+$slug+'.eot');
+	    src: url('../fonts/'+$folder+'/'+$slug+'.eot?#iefix') format('embedded-opentype'),
+	         //url('../fonts/'+$folder+'/'+$slug+'.woff2') format('woff2'),
+	         url('../fonts/'+$folder+'/'+$slug+'.ttf') format('truetype'),
+	         url('../fonts/'+$folder+'/'+$slug+'.woff') format('woff'),
+	         url('../fonts/'+$folder+'/'+$slug+'.svg') format('svg');
+	    font-weight: $font-weight;
+	    font-style: normal;
+	}
+}
+
+
+/*
+TEXT TRUNCATE
+--
+requires inline-block or block for proper styling
+*/
+
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+//========================================================= BACKGROUNDS
+
+
+/*
+PSEUDO BACKGROUND
+--
+Use in :before or :after
+Parent element should be positioned
+*/
+
+@mixin pseudo_bg($color: #000, $opacity: 1) {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba($color, $opacity);
+}
+
+
+/*
+BACKGROUND WITH SHADOW
+--
+Make background with :after and fancy shadow with :before
+*/
+
+@mixin bg_with_shadow($bgColor: #eee, $shadowColor: #000, $shadowOpacity: 0.2) {
+	position: relative;
+
+	> * {
+		position: relative;
+		z-index: 2;
+	}
+
+	&::before {
+		@include pseudo_bg(#000, 0);
+		width: 86%;
+		left: 7%;
+		box-shadow: 0 16px 30px rgba($shadowColor, $shadowOpacity);
+		z-index: 1;
+	}
+
+	&::after {
+		@include pseudo_bg($bgColor, 1);
+		z-index: 2;
+	}
+}
+
+// BACKGROUND COVER 
+
+@mixin bg_cover($img: false, $fixed: false) {
+	@if ($img) {
+		background-image: url(#{$img});
+	}
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	@if ( $fixed ) {
+		background-attachment: fixed;
+	}
+}
+
+
+// BACKGROUND RETINA
+
+@mixin retina_bg($image, $width, $height) {
+	@media 	(min--moz-device-pixel-ratio: 1.3),
+	     	(-o-min-device-pixel-ratio: 2.6/2),
+	     	(-webkit-min-device-pixel-ratio: 1.3),
+	     	(min-device-pixel-ratio: 1.3),
+	     	(min-resolution: 1.3dppx)
+	{
+		background-image: url($image);
+		background-size: $width $height;
+	}
+}
+
+//========================================================== ELEMENTS
+
+// BOX SHADOW
+
+@mixin shadow($position: null, $intensity: 10px, $opacity: 0.1, $color:#000) {
+
+	@if ($position == 'left'){
+		box-shadow: -$intensity 0 $intensity rgba($color, $opacity);
+	}
+
+	@elseif ($position == 'right'){
+		box-shadow: $intensity 0 $intensity rgba($color, $opacity);
+	}
+
+	@elseif ($position == 'top'){
+		box-shadow: 0 -#{$intensity} $intensity rgba($color, $opacity);
+	}
+
+	@elseif ($position == 'bottom'){
+		box-shadow: 0 $intensity $intensity rgba($color, $opacity);
+	}
+
+	@else {
+		box-shadow: 0 0 $intensity rgba($color, $opacity);
+	}
+}
+
+
+// VISIBILITY
+
+@mixin visibility($visible: true) {
+	@if ($visible) {
+		visibility: visible;
+		opacity: 1;
+	}
+	@else {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+
+// LIST RESET
+
+@mixin list_reset() {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+// TRANSITIONS
+
+@mixin transition($property: all, $speed: 0.2s, $delay: 0s, $easing: $easeInOutCirc) {
+	transition-property: $property;
+  	transition-duration: $speed;
+  	transition-delay: $delay;
+  	transition-timing-function: $easing;
+}

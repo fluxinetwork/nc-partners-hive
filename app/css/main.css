@@ -1,0 +1,648 @@
+/*
+FLEX
+--
+/*$positions: justify-content & align-items
+If only one value, will be used for the two properties
+Use 'null' to not declare a propertie, ex: flex(center null)
+*/
+/*
+FILL
+--
+$mode = 'parent' || 'viewport'
+$fullH fill width AND height
+*/
+/*
+RESPONSIVE FONT
+--
+https://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps
+*/
+/*
+ADD WEBFONT
+--
+$path in context of the fonts folder
+*/
+/*
+TEXT TRUNCATE
+--
+requires inline-block or block for proper styling
+*/
+/*
+PSEUDO BACKGROUND
+--
+Use in :before or :after
+Parent element should be positioned
+*/
+/*
+BACKGROUND WITH SHADOW
+--
+Make background with :after and fancy shadow with :before
+*/
+/*======================================================================*\
+==========================================================================
+
+							UTILS : HELPERS
+
+==========================================================================
+\*======================================================================*/
+.transition {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.is-none {
+  display: none !important;
+}
+
+/*======================================================================*\
+==========================================================================
+
+								RESET
+
+==========================================================================
+\*======================================================================*/
+/*
+body {
+	margin: 0;
+	padding: 0;
+}
+
+button, input, select, textarea {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+img { 
+	display: block;
+	max-width: 100%;
+}
+
+svg { max-height: 100% }
+
+a { 
+	text-decoration: none;
+	outline: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*======================================================================*\
+==========================================================================
+
+								LAYERS
+
+==========================================================================
+\*======================================================================*/
+/*======================================================================*\
+==========================================================================
+
+							TYPOGRAPHY
+
+==========================================================================
+\*======================================================================*/
+body {
+  font-family: "Open sans";
+  line-height: 1.3;
+  color: #45545f;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child {
+  margin-top: 0;
+}
+
+.h0 {
+  font-size: 22px;
+}
+@media screen and (min-width: 700px) {
+  .h0 {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .h0 {
+    font-size: 45px;
+  }
+}
+
+h1, .h1 {
+  font-size: 29px;
+}
+@media screen and (min-width: 700px) {
+  h1, .h1 {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 960px) {
+  h1, .h1 {
+    font-size: 40px;
+  }
+}
+
+h1 {
+  margin-top: 2em;
+}
+
+h2, .h2 {
+  font-size: 25px;
+}
+@media screen and (min-width: 700px) {
+  h2, .h2 {
+    font-size: 29px;
+  }
+}
+@media screen and (min-width: 960px) {
+  h2, .h2 {
+    font-size: 34px;
+  }
+}
+
+h2 {
+  margin-top: 2.2em;
+}
+
+h3, .h3 {
+  font-size: 20px;
+}
+@media screen and (min-width: 700px) {
+  h3, .h3 {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 960px) {
+  h3, .h3 {
+    font-size: 25px;
+  }
+}
+
+h3 {
+  margin-top: 1.7em;
+}
+
+h4, .h4 {
+  font-size: 16px;
+}
+@media screen and (min-width: 700px) {
+  h4, .h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 960px) {
+  h4, .h4 {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  margin-top: 1em;
+}
+
+h5, .h5, .content figure figcaption {
+  font-size: 14px;
+}
+@media screen and (min-width: 700px) {
+  h5, .h5, .content figure figcaption {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 960px) {
+  h5, .h5, .content figure figcaption {
+    font-size: 16px;
+  }
+}
+
+h5 {
+  margin-top: 0.8em;
+}
+
+h6, .h6 {
+  font-size: 12px;
+}
+@media screen and (min-width: 700px) {
+  h6, .h6 {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 960px) {
+  h6, .h6 {
+    font-size: 14px;
+  }
+}
+
+h6 {
+  margin-top: 0.7;
+}
+
+p, .p, ul li {
+  font-size: 16px;
+  font-family: "Open sans";
+}
+@media screen and (min-width: 700px) {
+  p, .p, ul li {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 960px) {
+  p, .p, ul li {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin-top: 1em;
+}
+
+ul {
+  margin-top: 1em;
+}
+ul li {
+  margin-top: 0.4em;
+  line-height: 1.1;
+}
+
+p a,
+li a {
+  color: #45545f;
+  font-weight: 900;
+  text-decoration: underline;
+}
+p a:hover,
+li a:hover {
+  color: #000;
+}
+
+/*======================================================================*\
+==========================================================================
+
+						LAYOUTS : LIB
+
+==========================================================================
+\*======================================================================*/
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : COL
+
+==========================================================================
+\*======================================================================*/
+.l-col {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.l-col--content {
+  max-width: 650px;
+}
+@media screen and (min-width: 1248px) {
+  .l-col--content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : CELL
+
+==========================================================================
+\*======================================================================*/
+.l-cell {
+  padding: 16px;
+}
+@media screen and (min-width: 700px) {
+  .l-cell {
+    padding: 20.8px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .l-cell {
+    padding: 24px;
+  }
+}
+
+.l-largeCell {
+  padding: 40px;
+}
+@media screen and (min-width: 700px) {
+  .l-largeCell {
+    padding: 52px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .l-largeCell {
+    padding: 64px;
+  }
+}
+
+.l-heroCell {
+  padding: 64px 40px;
+}
+@media screen and (min-width: 700px) {
+  .l-heroCell {
+    padding: 83.2px 52px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .l-heroCell {
+    padding: 96px 64px;
+  }
+}
+
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : MARGIN
+
+==========================================================================
+\*======================================================================*/
+.l-marginTop, .l-margin {
+  margin-top: 40px;
+}
+@media screen and (min-width: 700px) {
+  .l-marginTop, .l-margin {
+    margin-top: 64px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .l-marginTop, .l-margin {
+    margin-top: 96px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .l-marginTop, .l-margin {
+    margin-top: 124.8px;
+  }
+}
+
+.l-marginBottom, .l-margin {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 700px) {
+  .l-marginBottom, .l-margin {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .l-marginBottom, .l-margin {
+    margin-bottom: 96px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .l-marginBottom, .l-margin {
+    margin-bottom: 124.8px;
+  }
+}
+
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : PADDING
+
+==========================================================================
+\*======================================================================*/
+.l-paddingTop, .l-padding {
+  padding-top: 40px;
+}
+@media screen and (min-width: 700px) {
+  .l-paddingTop, .l-padding {
+    padding-top: 64px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .l-paddingTop, .l-padding {
+    padding-top: 96px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .l-paddingTop, .l-padding {
+    padding-top: 124.8px;
+  }
+}
+
+.l-paddingBottom, .l-padding {
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 700px) {
+  .l-paddingBottom, .l-padding {
+    padding-bottom: 64px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .l-paddingBottom, .l-padding {
+    padding-bottom: 96px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .l-paddingBottom, .l-padding {
+    padding-bottom: 124.8px;
+  }
+}
+
+.l-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.l-center--col {
+  flex-direction: column;
+}
+
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : JUMP
+
+==========================================================================
+\*======================================================================*/
+.l-jump {
+  margin-top: 24px;
+}
+@media screen and (min-width: 700px) {
+  .l-jump {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .l-jump {
+    margin-top: 52px;
+  }
+}
+
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : CENTER
+
+==========================================================================
+\*======================================================================*/
+.l-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.l-center--col {
+  flex-direction: column;
+}
+
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT BASE FLEXGRID
+
+==========================================================================
+\*======================================================================*/
+.l-flexGrid {
+  display: flex;
+  flex-direction: true;
+}
+
+.l-flexGrid__item {
+  flex: 1 0 100%;
+  padding: 12px 0;
+}
+.l-flexGrid__item--first, .l-flexGrid__item:first-child {
+  padding-top: 0;
+}
+.l-flexGrid__item--last, .l-flexGrid__item:last-child {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .l-flexGrid {
+    flex-direction: row;
+  }
+
+  .l-flexGrid__item {
+    flex: 1 0 0%;
+    padding: 0 12px;
+  }
+  .l-flexGrid__item--first, .l-flexGrid__item:first-child {
+    padding-left: 0;
+  }
+  .l-flexGrid__item:last-child {
+    padding-right: 0;
+  }
+}
+/*======================================================================*\
+==========================================================================
+
+						COMPONENTS : LIB
+
+==========================================================================
+\*======================================================================*/
+/*======================================================================*\
+==========================================================================
+
+							HOMEPAGE
+
+==========================================================================
+\*======================================================================*/
+/*======================================================================*\
+==========================================================================
+
+								HEADER
+
+==========================================================================
+\*======================================================================*/
+.js-menu.header__menu.grid__item li a,
+.header__buttons--right a.custom-color-header-links-public,
+.js-menu-container .js-dropdown-more-menu > a.item-actions,
+.dropdown-menu.header--menu__sub_pages_customizables a {
+  font-family: 'Open Sans Light', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #46555f !important;
+}
+
+.dropdown-menu.header--menu__sub_pages_customizables a {
+  font-weight: normal !important;
+  font-size: 14px !important;
+}
+
+.header__buttons--right a.custom-color-header-links-public {
+  color: #00679e !important;
+}
+
+/*======================================================================*\
+==========================================================================
+
+							FOOTER
+
+==========================================================================
+\*======================================================================*/
+.custom-bg-color-footer.custom-color-footer-links.network__footer div {
+  font-family: 'Open Sans Light', sans-serif;
+  font-weight: normal;
+}
+
+.custom-color-footer-links.network-footer__section-title {
+  text-transform: uppercase;
+}
+
+.custom-bg-color-footer.custom-color-footer-links.network__footer a:hover {
+  text-decoration: underline;
+}
+
+/*.homepage-container.lap-and-up--soft--sides .custom-color-footer-links{
+	color: #63737e !important;
+}*/
+.content h1,
+.content h2,
+.content h3 {
+  font-family: "Fjalla One", sans-serif;
+}
+.content h3 {
+  font-weight: 400;
+}
+.content figure {
+  margin: 0;
+}
+.content figure img {
+  border-radius: 3px;
+}
+.content figure figcaption {
+  text-align: center;
+  margin-top: 0.5em;
+  color: #45545f;
+  padding: 0 24px;
+}
+
+.content-jump {
+  display: block;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.content-jump + .content-jump {
+  margin-top: -19.2px;
+}

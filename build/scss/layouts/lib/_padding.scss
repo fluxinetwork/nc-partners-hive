@@ -1,0 +1,55 @@
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : PADDING
+
+==========================================================================
+\*======================================================================*/
+
+.l-paddingTop {
+	padding-top: $vRythm-s;
+
+	@media screen and (min-width: $break-M) {
+		padding-top: $vRythm-m;
+	}
+
+	@media screen and (min-width: $break-L) {
+		padding-top: $vRythm-l;
+	}
+
+	@media screen and (min-width: $break-XL) {
+		padding-top: $vRythm-xl;
+	}
+}
+
+.l-paddingBottom {
+	padding-bottom: $vRythm-s;
+
+	@media screen and (min-width: $break-M) {
+		padding-bottom: $vRythm-m;
+	}
+
+	@media screen and (min-width: $break-L) {
+		padding-bottom: $vRythm-l;
+	}
+
+	@media screen and (min-width: $break-XL) {
+		padding-bottom: $vRythm-xl;
+	}
+}
+
+.l-padding {
+	@extend .l-paddingTop;
+	@extend .l-paddingBottom;
+}
+
+
+//=============================================================  QUICK FLEX
+
+.l-center {
+	@include flex(center);
+
+	&--col {
+		flex-direction: column;
+	}
+}

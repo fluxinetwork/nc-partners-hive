@@ -1,0 +1,29 @@
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+//                               FUNCTIONS
+
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+@charset "UTF-8";
+
+@function unpack-duo($shorthand) {
+	@if length($shorthand) == 1 {
+		@return nth($shorthand, 1) nth($shorthand, 1);
+	} @else if length($shorthand) == 2 {
+		@return nth($shorthand, 1) nth($shorthand, 2);
+	}
+}
+
+@function radial-grad($color, $color2, $posColor2: 100%, $origin: null) {
+	@if $origin == null {
+		@return radial-gradient($color, $color2, $posColor2);
+	} @else {
+		@return radial-gradient($origin, $color, $color2, $posColor2);
+	}
+}
+
+@function linear-grad($color, $color2, $posColor2: 100%, $angle: -45deg) {
+	@return linear-gradient($angle, $color, $color2 $posColor2);
+}

@@ -1,0 +1,26 @@
+/*======================================================================*\
+==========================================================================
+
+								HEADER
+
+==========================================================================
+\*======================================================================*/
+
+.js-menu.header__menu.grid__item li a,
+.header__buttons--right a.custom-color-header-links-public,
+.js-menu-container .js-dropdown-more-menu > a.item-actions,
+.dropdown-menu.header--menu__sub_pages_customizables a{
+	font-family: 'Open Sans Light', sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #46555f !important;
+}
+
+.dropdown-menu.header--menu__sub_pages_customizables a{
+	font-weight: normal !important;
+	font-size: 14px !important;
+}
+.header__buttons--right a.custom-color-header-links-public{
+	color:#00679e !important;
+}

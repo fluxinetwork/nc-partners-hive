@@ -1,0 +1,79 @@
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+//                               VARIABLES
+
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////// BREAKPOINTS
+
+$breakpoints: (
+	medium: 700px, 
+	large: 960px,
+	xlarge: 1200px,
+	xxlarge: 1400px
+);
+
+$break-M: map-get($breakpoints, medium);
+$break-L: map-get($breakpoints, large);
+$break-XL: map-get($breakpoints, xlarge);
+$break-XXL: map-get($breakpoints, xxlarge);
+
+
+/////////////////////////////////////////////////////////////////// SPACES
+
+$space: 8px;
+$space-S: $space*2;
+$space-M: $space*3;
+$space-L: $space*5;
+$space-XL: $space*8;
+$space-XXL: $space*12;
+
+$gutter: $space-M;
+
+$bigger: 1.3;
+$smaller: 0.7;
+
+$vRythm-s: $space-L;
+$vRythm-m: $space-XL;
+$vRythm-l: $space-XXL;
+$vRythm-xl: $space-XXL*$bigger;
+
+
+/////////////////////////////////////////////////////////////////// COLORS
+
+$c-main: #45545f;
+$c-accent: #00679e;
+$c-dark: #000;
+$c-light: #d4d8da;
+$c-txt: $c-main;
+$c-error: #F13636;
+$c-valid: #00C15F;
+
+$c-facebook: #3b5998;
+$c-twitter: #1da1f2;
+$c-youtube: #cd201f;
+$c-linkedin: #0077b5;
+
+
+//////////////////////////////////////////////////////////////////// TYPO
+
+$font-h: 'Fjalla One', sans-serif;
+$font-bt: $font-h;
+$font-txt: 'Open sans';
+
+
+//////////////////////////////////////////////////////////////////// SIZES
+
+$contentW: 650px;
+$maxW: 1200px;
+
+
+/////////////////////////////////////////////////////////////////// STYLES
+
+$radius: 3px;
+$border: 1px solid $c-dark;
+$shadow: 0 0 20px rgba($c-dark, 0.2);
+

@@ -1,0 +1,84 @@
+/*======================================================================*\
+==========================================================================
+
+							UTILS : FLEX
+
+==========================================================================
+\*======================================================================*/
+
+.flex {
+	display: flex !important;
+
+	&--column {
+		flex-direction: column !important;
+	}
+
+	&--wrap {
+		flex-wrap: wrap !important;
+	}
+
+	&--jcc {
+		justify-content: center !important;
+	}
+
+	&--jcsb {
+		justify-content: space-between !important;
+	}
+
+	&--jcfs {
+		justify-content: flex-start !important;
+	}
+
+	&--jcfe {
+		justify-content: flex-end !important;
+	}
+	
+	&--jcspa {
+		justify-content: space-around !important;
+	}
+
+	&--aifs {
+		align-items: flex-start !important;
+	}
+
+	&--aic {
+		align-items: center !important;
+	}
+
+	&--aife {
+		align-items: flex-end !important;
+	}
+
+	&--center {
+		align-items: center !important;
+		justify-content: center !important;
+	}
+
+	&--none {
+		flex: none !important;
+	}
+
+	&--auto {
+		flex: 1 0 auto !important;
+	}
+
+	&--equal {
+		flex: 1 0 0% !important;
+	}
+
+	&--100 {
+		flex: 1 0 100% !important;
+	}
+
+	&--1 {
+		flex: 1 !important;
+	}
+
+	&--2 {
+		flex: 2 !important;
+	}
+
+	&--3 {
+		flex: 3 !important;
+	}
+}

@@ -1,0 +1,41 @@
+.content {
+	h1,
+	h2,
+	h3 {
+		font-family: $font-h;
+	}
+
+	h3 {
+		font-weight: 400;
+	}
+
+	blockquote {
+
+	}
+
+	figure {
+		margin: 0;
+
+		img {
+			border-radius: $radius;
+		}
+
+		figcaption {
+			text-align: center;
+			@extend .h5;
+			margin-top: 0.5em;
+			color: $c-txt;
+			padding: 0 $gutter;
+		}
+	}
+}
+
+.content-jump {
+	display: block;
+	margin-top: $space-XL;
+	margin-bottom: $space-XL;
+
+	+ .content-jump {
+		margin-top: -$space-XL*0.3; 	
+	}
+}

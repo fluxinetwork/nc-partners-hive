@@ -1,0 +1,48 @@
+/*======================================================================*\
+==========================================================================
+
+							UTILS : TYPO
+
+==========================================================================
+\*======================================================================*/
+
+.t-deco--none {
+	text-decoration: none !important;
+}
+
+.t--h {
+	font-family: $font-h !important;
+}
+.t--bt {
+	font-family: $font-bt !important;
+}
+.t--p {
+	font-family: $font-txt !important;
+}
+
+.t--uppercase {
+	text-transform: uppercase !important;
+}
+.t--lowercase {
+	text-transform: lowercase !important;
+}
+
+.t-align--l {
+	text-align: left !important;
+}
+.t-align--r {
+	text-align: right !important;
+}
+.t-align--c {
+	text-align: center !important;
+}
+
+.t-fw--400 {
+	font-weight: 400 !important;
+}
+.t-fw--700 {
+	font-weight: 700 !important;
+}
+.t-fw--900 {
+	font-weight: 900 !important;
+}

@@ -1,0 +1,57 @@
+/*======================================================================*\
+==========================================================================
+
+						UTILS : RESPONSIVE DISPLAY
+
+==========================================================================
+\*======================================================================*/
+
+//==================================================== SHOW
+
+[class*="show@"] {
+	display: none;
+}
+
+.show\@small {
+	@media screen and(min-width: $break-S) {
+		display: block;
+	}
+}
+
+.show\@medium {
+	@media screen and(min-width: $break-M) {
+		display: block;
+	}
+}
+
+.show\@large {
+	@media screen and(min-width: $break-L) {
+		display: block;
+	}
+}
+
+.show\@xlarge {
+	@media screen and(min-width: $break-XL) {
+		display: block;
+	}
+}
+
+//==================================================== HIDE
+
+.hide\@medium {
+	@media screen and(min-width: $break-M) {
+		display: none !important;
+	}
+}
+
+.hide\@large {
+	@media screen and(min-width: $break-L) {
+		display: none !important;
+	}
+}
+
+.hide\@xlarge {
+	@media screen and(min-width: $break-XL) {
+		display: none !important;
+	}
+}
