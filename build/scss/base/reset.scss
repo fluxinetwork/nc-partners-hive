@@ -7,13 +7,9 @@
 \*======================================================================*/
 
 // ULTRA LIGHT RESET
-/*
-body {
-	margin: 0;
-	padding: 0;
-}
 
-button, input, select, textarea {
+
+.content button, .content input, .content select, .content textarea {
   border: 0;
   outline: 0;
   box-shadow: none;
@@ -22,25 +18,25 @@ button, input, select, textarea {
   font-size: 100%;
 }
 
-img { 
+.content img { 
 	display: block;
 	max-width: 100%;
 }
 
-svg { max-height: 100% }
+.content svg { max-height: 100% }
 
-a { 
+.content a { 
 	text-decoration: none;
 	outline: 0;
 }
 
-button {
+.content button {
 	cursor: pointer;
 }
 
 
 // BETTER BOX SIZING
-
+/*
 html {
   box-sizing: border-box;
 }

@@ -1,4 +1,4 @@
-/*.content {
+.content {
 	h1,
 	h2,
 	h3 {
@@ -14,11 +14,7 @@
 	}
 
 	figure {
-		margin: 0;
-
-		img {
-			border-radius: $radius;
-		}
+		margin: 0;		
 
 		figcaption {
 			text-align: center;
@@ -29,7 +25,7 @@
 		}
 	}
 }
-
+/*
 .content-jump {
 	display: block;
 	margin-top: $space-XL;

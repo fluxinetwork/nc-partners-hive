@@ -5,7 +5,7 @@
 
 ==========================================================================
 \*======================================================================*/
-
+/*
 var cssId = 'global-on-demand';  // you could encode the css path itself to generate id..
 if (!document.getElementById(cssId)){
     var head  = document.getElementsByTagName('head')[0];
@@ -16,4 +16,4 @@ if (!document.getElementById(cssId)){
     link.href = 'https://rawgit.com/fluxinetwork/nc-partners-hive/master/app/css/main.css';
     link.media = 'all';
     head.appendChild(link);
-}
+}*/
