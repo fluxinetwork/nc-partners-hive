@@ -217,16 +217,16 @@ body {
   margin-top: 1em;
 }
 
-.content h5, .h5, .content figure figcaption {
+.content h5, .h5, .c-button, .content figure figcaption {
   font-size: 14px;
 }
 @media screen and (min-width: 700px) {
-  .content h5, .h5, .content figure figcaption {
+  .content h5, .h5, .c-button, .content figure figcaption {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 960px) {
-  .content h5, .h5, .content figure figcaption {
+  .content h5, .h5, .c-button, .content figure figcaption {
     font-size: 16px;
   }
 }
@@ -724,10 +724,102 @@ body {
 /*======================================================================*\
 ==========================================================================
 
-						COMPONENTS : LIB
+							BUTTON
 
 ==========================================================================
 \*======================================================================*/
+.c-button {
+  display: inline-block;
+  padding: 0.6em 1em;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  background-color: #00679e;
+  border-radius: 3px;
+  color: #fff;
+  border: 0;
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.c-button:hover {
+  background-color: #00679e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+.c-button.-white {
+  background-color: #fff;
+  color: #00679e;
+}
+.c-button.-white:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 20px rgba(0, 103, 158, 0.5);
+}
+
+/*======================================================================*\
+==========================================================================
+
+							HERO
+
+==========================================================================
+\*======================================================================*/
+/* Hero */
+.hero {
+  position: relative;
+  background-color: #d4d8da;
+  background-size: cover;
+  text-align: center;
+}
+.hero:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.hero#hero__home:before {
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/b6ad272e/app/img/NC-Partners-OnDemand-bg2.jpg");
+}
+.hero:after {
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  opacity: 0.5;
+}
+.hero h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 50px;
+  line-height: normal;
+  font-family: 'Fjalla One', sans-serif;
+}
+.hero p {
+  color: #fff;
+  max-width: 650px;
+  display: block;
+  margin: 40px auto 0;
+  line-height: normal;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 3;
+}
+
+.hero__cta {
+  max-width: 650px;
+  margin: 64px auto 0;
+}
+.hero__cta .c-button {
+  min-width: 200px;
+}
+
 /*======================================================================*\
 ==========================================================================
 

@@ -8,7 +8,7 @@
 
 $( document ).ready(function() {
     $('.homepage-network__container .visuallyhidden--palm').removeClass('visuallyhidden--palm');
-}
+});
 
 
 /*
