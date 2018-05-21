@@ -13,7 +13,7 @@ if (!document.getElementById(cssId)){
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/master/app/css/main.css';
+    link.href = 'https://rawgit.com/fluxinetwork/nc-partners-hive/master/app/css/main.css';
     link.media = 'all';
     head.appendChild(link);
 }
