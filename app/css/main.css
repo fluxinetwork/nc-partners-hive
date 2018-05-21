@@ -766,7 +766,6 @@ body {
 .hero {
   position: relative;
   background-color: #d4d8da;
-  background-size: cover;
   text-align: center;
 }
 .hero:before {
@@ -780,9 +779,12 @@ body {
 }
 .hero#hero__home:before {
   background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/b6ad272e/app/img/NC-Partners-OnDemand-bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero:after {
   content: "";
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png");
   background-color: #000;
   width: 100%;
   height: 100%;
