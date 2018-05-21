@@ -735,6 +735,11 @@ body {
 
 ==========================================================================
 \*======================================================================*/
+.homepage__cover {
+  height: 0;
+  display: none;
+}
+
 /*======================================================================*\
 ==========================================================================
 
@@ -789,9 +794,16 @@ body {
 .content h2,
 .content h3 {
   font-family: "Fjalla One", sans-serif;
+  line-height: normal;
 }
 .content h3 {
   font-weight: 400;
+}
+.content p {
+  line-height: normal;
+}
+.content blockquote {
+  line-height: normal;
 }
 .content figure {
   margin: 0;
