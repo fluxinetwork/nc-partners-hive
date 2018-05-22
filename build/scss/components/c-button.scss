@@ -9,7 +9,7 @@
 .c-button {
 	display: inline-block;
 	padding: 0.6em 1em;	
-	@extend .h5;
+	@extend .title-5;
 	font-family: $font-bt;
 	font-weight: normal;
 	text-align: center;	
@@ -19,6 +19,7 @@
 	color: #fff;
 	border: 0;	
 	transition: all 0.2s $easeInOutQuad;
+	
 
 	&:hover {
 		background-color: $c-hover;

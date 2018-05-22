@@ -7,40 +7,45 @@
 \*======================================================================*/
 
 .l-flexGrid {
-	@include flex(null, true);
+	//display: block;
 }
 
 .l-flexGrid__item {
-	flex: 1 0 100%;
-	padding: $gutter/2 0;
-
-	&--first,
+	padding-left: $gutter/2;
+	padding-right: $gutter/2;
+	
 	&:first-child {
-		padding-top: 0;
+		margin-left: 0;
+	}
+	
+	&:last-child {
+		margin-right: 0;
+		margin-top: $space-M;
 	}
 
-	&--last,
-	&:last-child {
-		padding-bottom: 0;
+	@media screen and (min-width: $break-M) {
+		&:last-child {			
+			margin-top: 0;
+		}
 	}
 }
 
 @media screen and (min-width: $break-M) {
 	.l-flexGrid {
-		flex-direction: row;
+		@include flex(null, true);
 	}
 
 	.l-flexGrid__item {
 		flex: 1 0 0%;
-		padding: 0 $gutter/2;
+		//padding: 0 $gutter/2;
 
-		&--first,
+		/*&--first,
 		&:first-child {
 			padding-left: 0;
 		}
 
 		&:last-child {
 			padding-right: 0;
-		}
+		}*/
 	}
 }

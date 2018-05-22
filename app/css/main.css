@@ -95,13 +95,15 @@ Make background with :after and fancy shadow with :before
   cursor: pointer;
 }
 
-/*
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
-}*/
+}
+
+/**/
 /*======================================================================*\
 ==========================================================================
 
@@ -124,146 +126,124 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p {
-  margin: 0;
-}
-.content h1:first-child, .content h2:first-child, .content h3:first-child, .content h4:first-child, .content h5:first-child, .content h6:first-child, .content p:first-child {
-  margin-top: 0;
-}
-
-.h0 {
-  font-size: 22px;
+.title-0, .heroTitle {
+  font-size: 30px;
+  font-family: "Fjalla One", sans-serif, sans-serif;
+  line-height: normal;
 }
 @media screen and (min-width: 700px) {
-  .h0 {
-    font-size: 32px;
+  .title-0, .heroTitle {
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 960px) {
-  .h0 {
-    font-size: 45px;
+  .title-0, .heroTitle {
+    font-size: 50px;
   }
 }
 
-.content h1, .h1 {
+.title-1, .sectionTitle {
   font-size: 29px;
+  font-family: "Fjalla One", sans-serif, sans-serif;
+  line-height: normal;
 }
 @media screen and (min-width: 700px) {
-  .content h1, .h1 {
+  .title-1, .sectionTitle {
     font-size: 34px;
   }
 }
 @media screen and (min-width: 960px) {
-  .content h1, .h1 {
+  .title-1, .sectionTitle {
     font-size: 40px;
   }
 }
 
-.content h1 {
-  margin-top: 2em;
-}
-
-.content h2, .h2 {
+.title-2 {
   font-size: 25px;
+  font-family: "Fjalla One", sans-serif, sans-serif;
+  line-height: normal;
 }
 @media screen and (min-width: 700px) {
-  .content h2, .h2 {
+  .title-2 {
     font-size: 29px;
   }
 }
 @media screen and (min-width: 960px) {
-  .content h2, .h2 {
+  .title-2 {
     font-size: 34px;
   }
 }
 
-.content h2 {
-  margin-top: 2.2em;
-}
-
-.content h3, .h3 {
+.title-3 {
   font-size: 20px;
+  font-family: "Fjalla One", sans-serif, sans-serif;
+  line-height: normal;
 }
 @media screen and (min-width: 700px) {
-  .content h3, .h3 {
+  .title-3 {
     font-size: 23px;
   }
 }
 @media screen and (min-width: 960px) {
-  .content h3, .h3 {
+  .title-3 {
     font-size: 25px;
   }
 }
 
-.content h3 {
-  margin-top: 1.7em;
-}
-
-.content h4, .h4 {
+.title-4 {
   font-size: 16px;
+  margin: 24px 0 0;
 }
 @media screen and (min-width: 700px) {
-  .content h4, .h4 {
+  .title-4 {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 960px) {
-  .content h4, .h4 {
+  .title-4 {
     font-size: 20px;
   }
 }
 
-.content h4 {
-  margin-top: 1em;
-}
-
-.content h5, .h5, .c-button, .content figure figcaption {
+.title-5, .c-button {
   font-size: 14px;
 }
 @media screen and (min-width: 700px) {
-  .content h5, .h5, .c-button, .content figure figcaption {
+  .title-5, .c-button {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 960px) {
-  .content h5, .h5, .c-button, .content figure figcaption {
+  .title-5, .c-button {
     font-size: 16px;
   }
 }
 
-.content h5 {
-  margin-top: 0.8em;
-}
-
-.content h6, .h6 {
+.title-6 {
   font-size: 12px;
 }
 @media screen and (min-width: 700px) {
-  .content h6, .h6 {
+  .title-6 {
     font-size: 13px;
   }
 }
 @media screen and (min-width: 960px) {
-  .content h6, .h6 {
+  .title-6 {
     font-size: 14px;
   }
 }
 
-.content h6 {
-  margin-top: 0.7;
-}
-
-.content p, .p, .content ul li {
+.content p, .para, .content ul li, .heroBaseline {
   font-size: 16px;
   font-family: "Open sans";
 }
 @media screen and (min-width: 700px) {
-  .content p, .p, .content ul li {
+  .content p, .para, .content ul li, .heroBaseline {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 960px) {
-  .content p, .p, .content ul li {
+  .content p, .para, .content ul li, .heroBaseline {
     font-size: 20px;
   }
 }
@@ -272,8 +252,23 @@ body {
   margin-top: 1em;
 }
 
+.para--min, .content .c-cardList li {
+  font-size: 14px;
+  font-family: "Open sans";
+}
+@media screen and (min-width: 700px) {
+  .para--min, .content .c-cardList li {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .para--min, .content .c-cardList li {
+    font-size: 16px;
+  }
+}
+
 .content ul {
-  margin-top: 1em;
+  margin: 1em 0 0 0;
 }
 .content ul li {
   margin-top: 0.4em;
@@ -308,9 +303,9 @@ body {
 [class^="fla-"]:before, [class*=" fla-"]:before,
 [class^="fla-"]:after, [class*=" fla-"]:after {
   font-family: Flaticon;
-  font-size: 20px;
+  font-size: 60px;
   font-style: normal;
-  margin-left: 20px;
+  color: #00679e;
 }
 
 .fla-interface:before {
@@ -482,18 +477,15 @@ body {
 .l-col {
   width: 100%;
   max-width: 1200px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
-.l-col--content {
-  max-width: 650px;
-}
-@media screen and (min-width: 1248px) {
-  .l-col--content {
-    padding-left: 0;
-    padding-right: 0;
+@media screen and (min-width: 700px) {
+  .l-col {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -689,36 +681,39 @@ body {
 
 ==========================================================================
 \*======================================================================*/
-.l-flexGrid {
-  display: flex;
-  flex-direction: true;
-}
-
 .l-flexGrid__item {
-  flex: 1 0 100%;
-  padding: 12px 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-.l-flexGrid__item--first, .l-flexGrid__item:first-child {
-  padding-top: 0;
+.l-flexGrid__item:first-child {
+  margin-left: 0;
 }
-.l-flexGrid__item--last, .l-flexGrid__item:last-child {
-  padding-bottom: 0;
+.l-flexGrid__item:last-child {
+  margin-right: 0;
+  margin-top: 24px;
+}
+@media screen and (min-width: 700px) {
+  .l-flexGrid__item:last-child {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 700px) {
   .l-flexGrid {
-    flex-direction: row;
+    display: flex;
+    flex-direction: true;
   }
 
   .l-flexGrid__item {
     flex: 1 0 0%;
-    padding: 0 12px;
-  }
-  .l-flexGrid__item--first, .l-flexGrid__item:first-child {
-    padding-left: 0;
-  }
-  .l-flexGrid__item:last-child {
-    padding-right: 0;
+    		/*&--first,
+    		&:first-child {
+    			padding-left: 0;
+    		}
+    
+    		&:last-child {
+    			padding-right: 0;
+    		}*/
   }
 }
 /*======================================================================*\
@@ -758,6 +753,39 @@ body {
 /*======================================================================*\
 ==========================================================================
 
+							CARD
+
+==========================================================================
+\*======================================================================*/
+.c-card {
+  border: 1px solid #d4d8da;
+  padding: 24px 40px 40px;
+}
+.c-card .c-button {
+  margin-top: 40px;
+}
+.c-card .c-icon {
+  text-align: center;
+}
+
+.c-cardTitle {
+  position: relative;
+  text-align: center;
+  margin: 16px 0 24px;
+}
+.c-cardTitle:after {
+  content: "";
+  background-color: #00679e;
+  width: 60px;
+  height: 6px;
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: -8px;
+}
+
+/*======================================================================*\
+==========================================================================
+
 							HERO
 
 ==========================================================================
@@ -778,7 +806,7 @@ body {
   z-index: 1;
 }
 .hero#hero__home:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/b6ad272e/app/img/NC-Partners-OnDemand-bg2.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -792,34 +820,43 @@ body {
   left: 0;
   top: 0;
   z-index: 2;
-  opacity: 0.5;
+  opacity: 0.6;
 }
-.hero h1 {
+
+.heroTitle {
   margin: 0;
   color: #fff;
-  font-size: 50px;
-  line-height: normal;
-  font-family: 'Fjalla One', sans-serif;
 }
-.hero p {
+
+.heroBaseline {
   color: #fff;
   max-width: 650px;
   display: block;
-  margin: 40px auto 0;
+  margin: 24px auto 0;
   line-height: normal;
 }
+@media screen and (min-width: 700px) {
+  .heroBaseline {
+    margin: 40px auto 0;
+  }
+}
 
-.hero__content {
+.heroContent {
   position: relative;
   z-index: 3;
 }
 
-.hero__cta {
+.heroCta {
   max-width: 650px;
-  margin: 64px auto 0;
+  margin: 40px auto 0;
 }
-.hero__cta .c-button {
-  min-width: 200px;
+@media screen and (min-width: 700px) {
+  .heroCta {
+    margin: 64px auto 0;
+  }
+  .heroCta .c-button {
+    min-width: 200px;
+  }
 }
 
 /*======================================================================*\
@@ -884,29 +921,10 @@ body {
 /*.homepage-container.lap-and-up--soft--sides .custom-color-footer-links{
 	color: #63737e !important;
 }*/
-.content h1,
-.content h2,
-.content h3 {
-  font-family: "Fjalla One", sans-serif;
-  line-height: normal;
-}
-.content h3 {
-  font-weight: 400;
-}
-.content p {
-  line-height: normal;
-}
-.content blockquote {
-  line-height: normal;
-}
-.content figure {
+.sectionTitle {
+  padding: 40px 0;
   margin: 0;
-}
-.content figure figcaption {
   text-align: center;
-  margin-top: 0.5em;
-  color: #45545f;
-  padding: 0 24px;
 }
 
 /*

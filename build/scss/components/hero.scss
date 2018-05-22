@@ -23,7 +23,7 @@
 	}
 
 	&#hero__home:before{
-		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/b6ad272e/app/img/NC-Partners-OnDemand-bg2.jpg');
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg2.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 	
@@ -39,36 +39,46 @@
 		left: 0;
 		top: 0;
 		z-index: 2;
-		opacity: 0.5;
-	}
-
-	h1{
-		margin: 0;
-		color: #fff;
-		font-size: 50px;
-		line-height: normal;
-		font-family: 'Fjalla One', sans-serif;
-	}
-	p{
-		color: #fff;
-		max-width: 650px;
-		display: block;
-		margin: $space-L auto 0;
-		line-height: normal;
+		opacity: 0.6;
 	}
 }
 
-.hero__content{
+.heroTitle{
+	@extend .title-0;
+	margin: 0;
+	color: #fff;
+}
+
+.heroBaseline{
+	@extend .para;
+	color: #fff;
+	max-width: 650px;
+	display: block;
+	margin: $space-M auto 0;
+	line-height: normal;
+
+	@media screen and (min-width: $break-M) {
+		margin: $space-L auto 0;
+	}	
+}
+
+.heroContent{
 	position: relative;	
 	z-index: 3;
 }
 
-.hero__cta{
+.heroCta{
 	max-width: 650px;
-	margin: $space-XL auto 0;
+	margin: $space-L auto 0;
 
-	.c-button{
-		min-width: 200px;
+	
+
+	@media screen and (min-width: $break-M) {
+		margin: $space-XL auto 0;
+
+		.c-button{
+			min-width: 200px;
+		}
 	}
 }
 

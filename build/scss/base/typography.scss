@@ -22,9 +22,9 @@ body {
 //============================================================== FONT SIZES
 
 $h0-font-sizes: (
-	null : (22px),
-	medium : (32px),
-	large : (45px)
+	null : (30px),
+	medium : (40px),
+	large : (50px)
 );
 
 $h1-font-sizes: (
@@ -67,80 +67,68 @@ $h6-font-sizes: (
 //========================================================== BASE STYLES
 
 
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p {
-	margin: 0;
-
-	&:first-child {
-		margin-top: 0;
-	}
-}
-
-.h0 {	
-	@include font-size($h0-font-sizes);	
+.title-0 {	
+	@include font-size($h0-font-sizes);
+	font-family: $font-h, sans-serif;
+	line-height: normal;
 }
 
 
-.content h1, .h1 {	
-	@include font-size($h1-font-sizes);	
+.title-1{	
+	@include font-size($h1-font-sizes);
+	font-family: $font-h, sans-serif;
+	line-height: normal;	
 }
-.content h1 {	
-	margin-top: 2em;
-}
+	
 
-
-.content h2, .h2 {	
+.title-2 {	
 	@include font-size($h2-font-sizes);	
-}
-.content h2 {	
-	margin-top: 2.2em;
+	font-family: $font-h, sans-serif;
+	line-height: normal;
 }
 
-
-.content h3, .h3 {	
-	@include font-size($h3-font-sizes);	
-}
-.content h3 {	
-	margin-top: 1.7em;
+.title-3 {	
+	@include font-size($h3-font-sizes);
+	font-family: $font-h, sans-serif;
+	line-height: normal;
 }
 
 
-.content h4, .h4 {	
-	@include font-size($h4-font-sizes);	
-}
-.content h4 {	
-	margin-top: 1em;
+.title-4 {	
+	@include font-size($h4-font-sizes);
+	margin: $space-M 0 0;
 }
 
 
-.content h5, .h5 {	
+.title-5 {	
 	@include font-size($h5-font-sizes);	
 }
-.content h5 {	
-	margin-top: 0.8em;
-}
 
-.content h6, .h6 {	
+
+.title-6 {	
 	@include font-size($h6-font-sizes);	
 }
-.content h6 {	
-	margin-top: 0.7;
-}
 
 
-.content p, .p {
+.content p, .para {
 	@include font-size($h4-font-sizes);	
-	font-family: $font-txt
+	font-family: $font-txt;
 }
+
 .content p {
 	margin-top: 1em;
 }
 
+.para--min{
+	@include font-size($h5-font-sizes);	
+	font-family: $font-txt;
+}
 
 .content ul {
-	margin-top: 1em;
+	margin: 1em 0 0 0;
 
 	li {
-		@extend .p;
+		@extend .para;
 		margin-top: 0.4em;
 		line-height: 1.1;
 	}
@@ -181,9 +169,9 @@ $h6-font-sizes: (
 [class^="fla-"]:before, [class*=" fla-"]:before,
 [class^="fla-"]:after, [class*=" fla-"]:after {   
   	font-family: Flaticon;
-    font-size: 20px;
+    font-size: 60px;
 	font-style: normal;
-	margin-left: 20px;
+	color: $c-accent;
 }
 
 .fla-interface:before { content: "\f100"; }

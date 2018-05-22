@@ -1,0 +1,40 @@
+/*======================================================================*\
+==========================================================================
+
+							CARD
+
+==========================================================================
+\*======================================================================*/
+
+.c-card {	
+	border:1px solid $c-light;
+	padding: $space-M $gutter $space-L;
+
+	.c-button{
+		margin-top: $space-L;
+	}
+	
+	.c-icon{
+		text-align: center;
+	}
+}
+
+.c-cardTitle{
+	position: relative;
+	text-align: center;
+	margin: $space-S 0 $space-M;
+	&:after{
+		content: "";
+		background-color: $c-accent;
+		width: 60px;
+		height: 6px;
+		position: absolute;
+		left: calc(50% - 30px);
+		bottom: -$space;
+		
+	}
+}
+
+.content .c-cardList li{
+	@extend .para--min;
+}
