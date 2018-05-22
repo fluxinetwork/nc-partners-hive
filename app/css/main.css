@@ -314,15 +314,15 @@ body {
 /**/
 @font-face {
   font-family: "Flaticon";
-  src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7fc3d39f/app/fonts/flaticon/Flaticon.eot");
-  src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7fc3d39f/app/fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7fc3d39f/app/fonts/flaticon/Flaticon.woff") format("woff"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7fc3d39f/app/fonts/flaticon/Flaticon.ttf") format("truetype"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7fc3d39f/app/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.eot");
+  src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.woff") format("woff"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.ttf") format("truetype"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "Flaticon";
-    src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7fc3d39f/app/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+    src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
   }
 }
 [class^="fla-"]:before, [class*=" fla-"]:before,
