@@ -306,6 +306,7 @@ body {
   font-size: 60px;
   font-style: normal;
   color: #00679e;
+  line-height: 60px;
 }
 
 .fla-interface:before {
@@ -748,6 +749,10 @@ body {
 .c-button.-white:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-shadow: 0 0 20px rgba(0, 103, 158, 0.5);
+}
+
+.content .c-button {
+  color: #fff;
 }
 
 /*======================================================================*\

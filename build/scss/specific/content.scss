@@ -1,35 +1,14 @@
 .content {
-	h1,
-	h2,
-	h3 {
-		font-family: $font-h;
-		line-height: normal;
-	}
 
-	h3 {
-		font-weight: 400;
-	}
-	
-	p{
-		line-height: normal;
-	}
-
-	blockquote {
-		line-height: normal;
-	}
-
-	figure {
-		margin: 0;		
-
-		figcaption {
-			text-align: center;
-			@extend .h5;
-			margin-top: 0.5em;
-			color: $c-txt;
-			padding: 0 $gutter;
-		}
-	}
 }
+
+.sectionTitle{
+	@extend .title-1;
+	padding:$space-L 0;
+	margin: 0;
+	text-align: center;
+}
+
 /*
 .content-jump {
 	display: block;
