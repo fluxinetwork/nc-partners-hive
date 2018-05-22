@@ -7,7 +7,10 @@
 \*======================================================================*/
 
 // ULTRA LIGHT RESET
-
+body{
+  margin: 0;
+  padding: 0;
+}
 
 .content button, .content input, .content select, .content textarea {
   border: 0;
@@ -42,4 +45,5 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
-}/**/
+}
+

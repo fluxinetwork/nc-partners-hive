@@ -9,6 +9,14 @@
 .c-card {	
 	border:1px solid $c-light;
 	padding: $space-M $gutter $space-L;
+	margin-top: $space-M;
+&:first-child{
+			margin-top: 0;
+		}
+	@media screen and (min-width: $break-M) {
+		
+		
+	}
 
 	.c-button{
 		margin-top: $space-L;

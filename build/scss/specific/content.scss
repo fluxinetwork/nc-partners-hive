@@ -9,6 +9,17 @@
 	text-align: center;
 }
 
+.bg-main{
+	background-color: $c-accent;
+
+	.sectionTitle{
+		color:#fff;
+	}
+
+	.c-card{
+		background-color: #fff;
+	}
+}
 /*
 .content-jump {
 	display: block;

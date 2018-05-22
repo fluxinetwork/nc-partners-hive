@@ -68,6 +68,11 @@ Make background with :after and fancy shadow with :before
 
 ==========================================================================
 \*======================================================================*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .content button, .content input, .content select, .content textarea {
   border: 0;
   outline: 0;
@@ -103,7 +108,6 @@ html {
   box-sizing: inherit;
 }
 
-/**/
 /*======================================================================*\
 ==========================================================================
 
@@ -270,7 +274,7 @@ body {
 }
 
 .content p {
-  margin-top: 1em;
+  margin: 1em 0 0;
 }
 
 .para--min, .content .c-cardList li {
@@ -501,6 +505,7 @@ body {
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -704,8 +709,8 @@ body {
 ==========================================================================
 \*======================================================================*/
 .l-flexGrid__item {
-  padding-left: 20px;
-  padding-right: 20px;
+  /*padding-left: $gutter/2;
+  padding-right: $gutter/2;*/
 }
 .l-flexGrid__item:first-child {
   margin-left: 0;
@@ -786,6 +791,10 @@ body {
 .c-card {
   border: 1px solid #d4d8da;
   padding: 24px 40px 40px;
+  margin-top: 24px;
+}
+.c-card:first-child {
+  margin-top: 0;
 }
 .c-card .c-button {
   margin-top: 40px;
@@ -950,6 +959,16 @@ h3.c-cardTitle:after {
   padding: 40px 0;
   margin: 0;
   text-align: center;
+}
+
+.bg-main {
+  background-color: #00679e;
+}
+.bg-main .sectionTitle {
+  color: #fff;
+}
+.bg-main .c-card {
+  background-color: #fff;
 }
 
 /*

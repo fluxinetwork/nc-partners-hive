@@ -11,20 +11,20 @@
 }
 
 .l-flexGrid__item {
-	padding-left: $gutter/2;
-	padding-right: $gutter/2;
-	
+	/*padding-left: $gutter/2;
+	padding-right: $gutter/2;*/
+
 	&:first-child {
 		margin-left: 0;
 	}
-	
+
 	&:last-child {
 		margin-right: 0;
 		margin-top: $space-M;
 	}
 
 	@media screen and (min-width: $break-M) {
-		&:last-child {			
+		&:last-child {
 			margin-top: 0;
 		}
 	}
