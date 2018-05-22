@@ -334,6 +334,10 @@ body {
   line-height: 60px;
 }
 
+.fla-left:before {
+  content: "\f100";
+}
+
 .fla-interface:before {
   content: "\f100";
 }
