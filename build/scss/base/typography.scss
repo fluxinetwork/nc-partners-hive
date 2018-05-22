@@ -74,38 +74,38 @@ $h6-font-sizes: (
 }
 
 
-.title-1{	
+.title-1, h1.title-1{	
 	@include font-size($h1-font-sizes);
 	font-family: $font-h, sans-serif;
 	line-height: normal;	
 }
 	
 
-.title-2 {	
+.title-2, h2.title-2 {	
 	@include font-size($h2-font-sizes);	
 	font-family: $font-h, sans-serif;
 	line-height: normal;
 }
 
-.title-3, h3.c-cardTitle {	
+.title-3, h3.title-3, h3.c-cardTitle {	
 	@include font-size($h3-font-sizes);
 	font-family: $font-h, sans-serif;
 	line-height: normal;
 }
 
 
-.title-4 {	
+.title-4, h4.title-4 {	
 	@include font-size($h4-font-sizes);
 	margin: $space-M 0 0;
 }
 
 
-.title-5 {	
+.title-5, h5.title-5 {	
 	@include font-size($h5-font-sizes);	
 }
 
 
-.title-6 {	
+.title-6, h6.title-6 {	
 	@include font-size($h6-font-sizes);	
 }
 
