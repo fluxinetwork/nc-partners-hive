@@ -87,7 +87,7 @@ $h6-font-sizes: (
 	line-height: normal;
 }
 
-.title-3 {	
+.title-3, h3.c-cardTitle {	
 	@include font-size($h3-font-sizes);
 	font-family: $font-h, sans-serif;
 	line-height: normal;
