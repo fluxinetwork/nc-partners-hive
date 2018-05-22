@@ -926,6 +926,11 @@ body {
 /*.homepage-container.lap-and-up--soft--sides .custom-color-footer-links{
 	color: #63737e !important;
 }*/
+.homepage-container {
+  max-width: 100%;
+  margin: auto;
+}
+
 .sectionTitle {
   padding: 40px 0;
   margin: 0;
