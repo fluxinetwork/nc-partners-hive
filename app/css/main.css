@@ -339,155 +339,155 @@ body {
 }
 
 .fla-interface:before {
-  content: "\f100";
-}
-
-.fla-people-6:before {
   content: "\f101";
 }
 
-.fla-time-2:before {
+.fla-people-6:before {
   content: "\f102";
 }
 
-.fla-people-5:before {
+.fla-time-2:before {
   content: "\f103";
 }
 
-.fla-travel:before {
+.fla-people-5:before {
   content: "\f104";
 }
 
-.fla-people-4:before {
+.fla-travel:before {
   content: "\f105";
 }
 
-.fla-people-3:before {
+.fla-people-4:before {
   content: "\f106";
 }
 
-.fla-time-1:before {
+.fla-people-3:before {
   content: "\f107";
 }
 
-.fla-man-1:before {
+.fla-time-1:before {
   content: "\f108";
 }
 
-.fla-circle:before {
+.fla-man-1:before {
   content: "\f109";
 }
 
-.fla-magnifying-glass:before {
+.fla-circle:before {
   content: "\f10a";
 }
 
-.fla-time:before {
+.fla-magnifying-glass:before {
   content: "\f10b";
 }
 
-.fla-transport:before {
+.fla-time:before {
   content: "\f10c";
 }
 
-.fla-graphic-1:before {
+.fla-transport:before {
   content: "\f10d";
 }
 
-.fla-map-location:before {
+.fla-graphic-1:before {
   content: "\f10e";
 }
 
-.fla-money:before {
+.fla-map-location:before {
   content: "\f10f";
 }
 
-.fla-business-2:before {
+.fla-money:before {
   content: "\f110";
 }
 
-.fla-hands:before {
+.fla-business-2:before {
   content: "\f111";
 }
 
-.fla-pen:before {
+.fla-hands:before {
   content: "\f112";
 }
 
-.fla-technology-3:before {
+.fla-pen:before {
   content: "\f113";
 }
 
-.fla-business-1:before {
+.fla-technology-3:before {
   content: "\f114";
 }
 
-.fla-clock:before {
+.fla-business-1:before {
   content: "\f115";
 }
 
-.fla-technology-2:before {
+.fla-clock:before {
   content: "\f116";
 }
 
-.fla-man:before {
+.fla-technology-2:before {
   content: "\f117";
 }
 
-.fla-statistics:before {
+.fla-man:before {
   content: "\f118";
 }
 
-.fla-loudspeaker:before {
+.fla-statistics:before {
   content: "\f119";
 }
 
-.fla-arrow:before {
+.fla-loudspeaker:before {
   content: "\f11a";
 }
 
-.fla-education:before {
+.fla-arrow:before {
   content: "\f11b";
 }
 
-.fla-square:before {
+.fla-education:before {
   content: "\f11c";
 }
 
-.fla-technology-1:before {
+.fla-square:before {
   content: "\f11d";
 }
 
-.fla-coins:before {
+.fla-technology-1:before {
   content: "\f11e";
 }
 
-.fla-technology:before {
+.fla-coins:before {
   content: "\f11f";
 }
 
-.fla-people-2:before {
+.fla-technology:before {
   content: "\f120";
 }
 
-.fla-looking:before {
+.fla-people-2:before {
   content: "\f121";
 }
 
-.fla-business:before {
+.fla-looking:before {
   content: "\f122";
 }
 
-.fla-people-1:before {
+.fla-business:before {
   content: "\f123";
 }
 
-.fla-people:before {
+.fla-people-1:before {
   content: "\f124";
 }
 
-.fla-graphic:before {
+.fla-people:before {
   content: "\f125";
+}
+
+.fla-graphic:before {
+  content: "\f126";
 }
 
 /*======================================================================*\
