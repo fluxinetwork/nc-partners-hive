@@ -751,7 +751,7 @@ body {
   text-shadow: 0 0 20px rgba(0, 103, 158, 0.5);
 }
 
-.content .c-button {
+.content a.c-button {
   color: #fff;
 }
 
