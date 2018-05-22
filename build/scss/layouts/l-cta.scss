@@ -1,0 +1,56 @@
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : CTA
+
+==========================================================================
+\*======================================================================*/
+
+.l-cta{
+	width: 100%;	
+	position: relative;
+	padding: $space-L $gutter/2 $space-L;
+	text-align: center;
+	background-color: $c-accent;
+
+	@media screen and (min-width: $break-M) {
+		padding: $space-L $gutter/2 $space-XL;
+	}
+
+	&:before{
+		content:"";
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png');		
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		opacity: 0.6;
+	}
+
+	.content{
+		position: relative;
+		z-index: 2;
+		max-width: $contentW;
+		margin-left: auto;
+		margin-right: auto;
+		color: #fff;
+
+		&:before{
+			content:"";
+			background-color: darken( $c-accent, 3% );		
+			width: 2px;
+			height: 100%;
+			position: absolute;			
+			z-index: 1;
+			opacity: 0.6;
+		}
+	}
+
+	.content a.c-button{
+		margin-top: $space-L;
+		color: $c-accent;
+	}
+	
+}

@@ -10,13 +10,14 @@
 	border:1px solid $c-light;
 	padding: $space-M $gutter $space-L;
 	margin-top: $space-M;
-&:first-child{
-			margin-top: 0;
-		}
+	
 	@media screen and (min-width: $break-M) {
-		
-		
+		margin-top: $gutter;
 	}
+
+	&:first-child{
+		margin-top: 0;
+	}	
 
 	.c-button{
 		margin-top: $space-L;
@@ -24,6 +25,24 @@
 	
 	.c-icon{
 		text-align: center;
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	&.-exp{
+		.citation{
+			@include font-size($h3-font-sizes);
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+		.fla-left{
+			font-size: 26px;
+			line-height: 26px;
+			position: relative;
+			top: 2px;
+			margin-right: 16px;
+		}
 	}
 }
 

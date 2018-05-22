@@ -71,13 +71,15 @@ $h6-font-sizes: (
 	@include font-size($h0-font-sizes);
 	font-family: $font-h, sans-serif;
 	line-height: normal;
+	font-weight: normal;
 }
 
 
 .title-1, h1.title-1{	
 	@include font-size($h1-font-sizes);
 	font-family: $font-h, sans-serif;
-	line-height: normal;	
+	line-height: normal;
+	font-weight: normal;	
 }
 	
 
@@ -85,12 +87,14 @@ $h6-font-sizes: (
 	@include font-size($h2-font-sizes);	
 	font-family: $font-h, sans-serif;
 	line-height: normal;
+	font-weight: normal;
 }
 
 .title-3, h3.title-3, h3.c-cardTitle {	
 	@include font-size($h3-font-sizes);
 	font-family: $font-h, sans-serif;
 	line-height: normal;
+	font-weight: normal;
 }
 
 
@@ -99,6 +103,7 @@ $h6-font-sizes: (
 	font-family: $font-h, sans-serif;
 	margin: $space-M 0 0;
 	line-height: normal;
+	font-weight: normal;
 }
 
 
@@ -123,7 +128,7 @@ $h6-font-sizes: (
 	margin: 1em 0 0;
 }
 
-.para--min{
+.para--min, .content .para--min{
 	@include font-size($h5-font-sizes);	
 	font-family: $font-txt;
 }
@@ -172,11 +177,9 @@ $h6-font-sizes: (
 
 [class^="fla-"]:before, [class*=" fla-"]:before,
 [class^="fla-"]:after, [class*=" fla-"]:after {   
-  	font-family: Flaticon;
-    font-size: 60px;
+  	font-family: Flaticon;    
 	font-style: normal;
 	color: $c-accent;
-	line-height: 60px;
 }
 
 .fla-left:before { content: "\f100"; }

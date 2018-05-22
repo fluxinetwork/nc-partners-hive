@@ -151,6 +151,7 @@ body {
   font-size: 30px;
   font-family: "Fjalla One", sans-serif, sans-serif;
   line-height: normal;
+  font-weight: normal;
 }
 @media screen and (min-width: 700px) {
   .title-0, .heroTitle {
@@ -167,6 +168,7 @@ body {
   font-size: 29px;
   font-family: "Fjalla One", sans-serif, sans-serif;
   line-height: normal;
+  font-weight: normal;
 }
 @media screen and (min-width: 700px) {
   .title-1, .sectionTitle, h1.title-1, h1.sectionTitle {
@@ -183,6 +185,7 @@ body {
   font-size: 25px;
   font-family: "Fjalla One", sans-serif, sans-serif;
   line-height: normal;
+  font-weight: normal;
 }
 @media screen and (min-width: 700px) {
   .title-2, h2.title-2 {
@@ -199,6 +202,7 @@ body {
   font-size: 20px;
   font-family: "Fjalla One", sans-serif, sans-serif;
   line-height: normal;
+  font-weight: normal;
 }
 @media screen and (min-width: 700px) {
   .title-3, h3.title-3, h3.c-cardTitle {
@@ -216,6 +220,7 @@ body {
   font-family: "Fjalla One", sans-serif, sans-serif;
   margin: 24px 0 0;
   line-height: normal;
+  font-weight: normal;
 }
 @media screen and (min-width: 700px) {
   .title-4, h4.title-4 {
@@ -277,17 +282,17 @@ body {
   margin: 1em 0 0;
 }
 
-.para--min, .content .c-cardList li {
+.para--min, .content .c-cardList li, .content .para--min, .content .c-cardList li {
   font-size: 14px;
   font-family: "Open sans";
 }
 @media screen and (min-width: 700px) {
-  .para--min, .content .c-cardList li {
+  .para--min, .content .c-cardList li, .content .para--min, .content .c-cardList li {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 960px) {
-  .para--min, .content .c-cardList li {
+  .para--min, .content .c-cardList li, .content .para--min, .content .c-cardList li {
     font-size: 16px;
   }
 }
@@ -328,10 +333,8 @@ body {
 [class^="fla-"]:before, [class*=" fla-"]:before,
 [class^="fla-"]:after, [class*=" fla-"]:after {
   font-family: Flaticon;
-  font-size: 60px;
   font-style: normal;
   color: #00679e;
-  line-height: 60px;
 }
 
 .fla-left:before {
@@ -506,7 +509,7 @@ body {
 \*======================================================================*/
 .l-col {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 40px;
@@ -517,6 +520,7 @@ body {
   .l-col {
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 64px;
   }
 }
 
@@ -716,15 +720,15 @@ body {
   /*padding-left: $gutter/2;
   padding-right: $gutter/2;*/
 }
-.l-flexGrid__item:first-child {
-  margin-left: 0;
-}
 .l-flexGrid__item:last-child {
-  margin-right: 0;
   margin-top: 24px;
 }
 @media screen and (min-width: 700px) {
+  .l-flexGrid__item:first-child {
+    margin-right: 20px;
+  }
   .l-flexGrid__item:last-child {
+    margin-left: 20px;
     margin-top: 0;
   }
 }
@@ -747,6 +751,70 @@ body {
     		}*/
   }
 }
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT BASE FLOAT
+
+==========================================================================
+\*======================================================================*/
+.l-floatGrid__item:first-child {
+  float: left;
+  margin-right: 20px;
+}
+
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : CTA
+
+==========================================================================
+\*======================================================================*/
+.l-cta {
+  width: 100%;
+  position: relative;
+  padding: 40px 20px 40px;
+  text-align: center;
+  background-color: #00679e;
+}
+@media screen and (min-width: 700px) {
+  .l-cta {
+    padding: 40px 20px 64px;
+  }
+}
+.l-cta:before {
+  content: "";
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 0.6;
+}
+.l-cta .content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.l-cta .content:before {
+  content: "";
+  background-color: #005d8f;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.6;
+}
+.l-cta .content a.c-button {
+  margin-top: 40px;
+  color: #00679e;
+}
+
 /*======================================================================*\
 ==========================================================================
 
@@ -797,6 +865,11 @@ body {
   padding: 24px 40px 40px;
   margin-top: 24px;
 }
+@media screen and (min-width: 700px) {
+  .c-card {
+    margin-top: 40px;
+  }
+}
 .c-card:first-child {
   margin-top: 0;
 }
@@ -805,6 +878,31 @@ body {
 }
 .c-card .c-icon {
   text-align: center;
+  font-size: 60px;
+  line-height: 60px;
+}
+.c-card.-exp .citation {
+  font-size: 20px;
+}
+@media screen and (min-width: 700px) {
+  .c-card.-exp .citation {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .c-card.-exp .citation {
+    font-size: 25px;
+  }
+}
+.c-card.-exp .citation:first-child {
+  margin-top: 0;
+}
+.c-card.-exp .fla-left {
+  font-size: 26px;
+  line-height: 26px;
+  position: relative;
+  top: 2px;
+  margin-right: 16px;
 }
 
 h3.c-cardTitle {
@@ -964,9 +1062,30 @@ h3.c-cardTitle:after {
   margin: 0;
   text-align: center;
 }
+@media screen and (min-width: 700px) {
+  .sectionTitle {
+    padding: 64px 0;
+  }
+}
 
 .bg-main {
   background-color: #00679e;
+  position: relative;
+}
+.bg-main:before {
+  content: "";
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 0.6;
+}
+.bg-main .l-col {
+  position: relative;
+  z-index: 2;
 }
 .bg-main .sectionTitle {
   color: #fff;

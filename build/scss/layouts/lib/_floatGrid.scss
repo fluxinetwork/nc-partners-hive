@@ -1,16 +1,18 @@
 /*======================================================================*\
 ==========================================================================
 
-						LAYOUTS : LIB
+							LAYOUT BASE FLOAT
 
 ==========================================================================
 \*======================================================================*/
 
-@import "_col";
-@import "_cell";
-@import "_margin";
-@import "_padding";
-@import "_jump";
-@import "_center";
-@import "_flexGrid";
-@import "_floatGrid";
+.l-floatGrid {
+
+}
+.l-floatGrid__item{
+	
+	&:first-child{
+		float: left;
+		margin-right: $gutter/2;
+	}
+}

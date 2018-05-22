@@ -7,10 +7,32 @@
 	padding:$space-L 0;
 	margin: 0;
 	text-align: center;
+
+	@media screen and (min-width: $break-M) {
+		padding:$space-XL 0;
+	}
 }
 
 .bg-main{
 	background-color: $c-accent;
+	position: relative;
+
+	&:before{
+		content:"";
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png');		
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		opacity: 0.6;
+	}
+
+	.l-col{
+		position: relative;
+		z-index: 2;
+	}
 
 	.sectionTitle{
 		color:#fff;
