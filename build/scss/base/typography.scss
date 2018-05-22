@@ -96,17 +96,21 @@ $h6-font-sizes: (
 
 .title-4, h4.title-4 {	
 	@include font-size($h4-font-sizes);
+	font-family: $font-h, sans-serif;
 	margin: $space-M 0 0;
+	line-height: normal;
 }
 
 
 .title-5, h5.title-5 {	
-	@include font-size($h5-font-sizes);	
+	@include font-size($h5-font-sizes);
+	line-height: normal;
 }
 
 
 .title-6, h6.title-6 {	
-	@include font-size($h6-font-sizes);	
+	@include font-size($h6-font-sizes);
+	line-height: normal;
 }
 
 
