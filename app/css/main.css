@@ -341,7 +341,7 @@ body {
 }
 .content p a:hover,
 .content li a:hover {
-  color: #000;
+  color: #132345;
 }
 
 /**/
@@ -548,7 +548,7 @@ body {
   .l-col {
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 64px;
+    padding-bottom: 96px;
   }
 }
 
@@ -806,7 +806,7 @@ body {
   width: 100%;
   position: relative;
   text-align: center;
-  background-color: #003857;
+  background-color: #132345;
 }
 .l-cta:before {
   content: "";
@@ -817,7 +817,7 @@ body {
   left: 0;
   top: 0;
   z-index: 1;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 .l-cta .l-flexGrid__item:last-child {
   margin-top: 40px;
@@ -851,7 +851,7 @@ body {
   .l-cta .content:before {
     width: 2px;
     height: 55%;
-    left: calc(50% - 2px);
+    left: calc(50% - 1px);
   }
 }
 .l-cta .content a.c-button {
@@ -1098,7 +1098,7 @@ h3.c-cardTitle:after {
 ==========================================================================
 \*======================================================================*/
 .custom-bg-color-footer.custom-color-footer-links.network__footer div {
-  font-family: 'Open Sans Light', sans-serif;
+  /*font-family: 'Open Sans Light', sans-serif;*/
   font-weight: normal;
 }
 
@@ -1114,18 +1114,18 @@ h3.c-cardTitle:after {
 	color: #63737e !important;
 }*/
 .sectionTitle {
-  padding: 40px 0;
+  padding: 64px 0 40px;
   margin: 0;
   text-align: center;
 }
 @media screen and (min-width: 700px) {
   .sectionTitle {
-    padding: 64px 0;
+    padding: 96px 0 64px;
   }
 }
 
 .bg-main {
-  background-color: #00679e;
+  background-color: #132345;
   position: relative;
 }
 .bg-main:before {

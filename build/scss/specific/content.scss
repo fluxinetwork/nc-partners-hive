@@ -2,17 +2,17 @@
 
 .sectionTitle{
 	@extend .title-1;
-	padding:$space-L 0;
+	padding:$space-XL 0 $space-L;
 	margin: 0;
 	text-align: center;
 
 	@media screen and (min-width: $break-M) {
-		padding:$space-XL 0;
+		padding:$space-XXL 0 $space-XL;
 	}
 }
 
 .bg-main{
-	background-color: $c-accent;
+	background-color: $c-bg;
 	position: relative;
 
 	&:before{
