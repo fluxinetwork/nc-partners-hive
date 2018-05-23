@@ -123,13 +123,13 @@ html {
 ==========================================================================
 \*======================================================================*/
 .header-container.header-container--nav .homepage-container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 @media screen and (min-width: 700px) {
   .header-container.header-container--nav .homepage-container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
 }
 
@@ -142,20 +142,15 @@ html {
   padding-bottom: 0 !important;
 }
 
-.lap-and-up--soft--sides {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-}
-
 .network__footer .homepage-container {
   max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 @media screen and (min-width: 700px) {
   .network__footer .homepage-container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
 }
 

@@ -6,12 +6,12 @@
 ==========================================================================
 \*======================================================================*/
 .header-container.header-container--nav .homepage-container{
-	padding-left: $gutter/2;
-	padding-right: $gutter/2;
+	padding-left: $gutter/2 !important;
+	padding-right: $gutter/2 !important;
 
 	@media screen and (min-width: $break-M) {
-		padding-left: $gutter;
-		padding-right: $gutter;
+		padding-left: $gutter !important;
+		padding-right: $gutter !important;
 	}
 }
 
@@ -24,18 +24,13 @@
 	padding-bottom: 0 !important;
 }
 
-.lap-and-up--soft--sides{
-	padding-right: 0 !important;
-	padding-left: 0 !important;
-}
-
 .network__footer .homepage-container{
 	max-width: $maxW;
-	padding-left: $gutter/2;
-	padding-right: $gutter/2;
+	padding-left: $gutter/2 !important;
+	padding-right: $gutter/2 !important;
 
 	@media screen and (min-width: $break-M) {
-		padding-left: $gutter;
-		padding-right: $gutter;
+		padding-left: $gutter !important;
+		padding-right: $gutter !important;
 	}
 }
