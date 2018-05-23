@@ -308,6 +308,7 @@ body {
 
 .content p {
   margin: 1em 0 0;
+  line-height: normal;
 }
 
 .para--min, .content .c-cardList li, .content .para--min, .content .c-cardList li {
