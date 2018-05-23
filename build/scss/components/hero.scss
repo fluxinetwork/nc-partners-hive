@@ -31,15 +31,16 @@
 
 	&:after{
 		content:"";
-		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png');
-		background-color: #000;
+		/*background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png');*/
+		background: url('../img/NC-Partners-OnDemand-texture5.png');
+		background-color: rgba(0,0,0,0.6);
 		width: 100%;
 		height: 100%;
 		position: absolute;
 		left: 0;
 		top: 0;
 		z-index: 2;
-		opacity: 0.6;
+		//opacity: 0.6;
 	}
 }
 

@@ -7,19 +7,15 @@
 \*======================================================================*/
 
 .l-cta{
-	width: 100%;	
+	width: 100%;
 	position: relative;
-	padding: $space-L $gutter/2 $space-L;
 	text-align: center;
-	background-color: $c-accent;
-
-	@media screen and (min-width: $break-M) {
-		padding: $space-L $gutter/2 $space-XL;
-	}
+	background-color: darken($c-accent, 14%);
 
 	&:before{
 		content:"";
-		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png');		
+		//background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png');
+		background: url('../img/NC-Partners-OnDemand-texture8.png');
 		width: 100%;
 		height: 100%;
 		position: absolute;
@@ -29,28 +25,57 @@
 		opacity: 0.6;
 	}
 
+	.l-flexGrid__item:last-child{
+		margin-top: $space-L;
+		@media screen and (min-width: $break-M) {
+			margin-top: 0;
+		}
+	}
+
 	.content{
 		position: relative;
 		z-index: 2;
 		max-width: $contentW;
 		margin-left: auto;
 		margin-right: auto;
+		padding: $space-L;
 		color: #fff;
 
 		&:before{
 			content:"";
-			background-color: darken( $c-accent, 3% );		
-			width: 2px;
-			height: 100%;
-			position: absolute;			
+			background-color: $c-accent;
+			width: 0;
+			height: 0;			
+			position: absolute;
 			z-index: 1;
-			opacity: 0.6;
+		}
+
+		@media screen and (min-width: $break-M) {			
+			padding: $space-XL $gutter $space-XL;
+			
+			&:before{
+				width: 2px;
+				height: 55%;
+				left: calc(50% - 2px);
+			}
 		}
 	}
 
 	.content a.c-button{
-		margin-top: $space-L;
 		color: $c-accent;
+		margin-top: $space-M;
+
+		@media screen and (min-width: $break-M) {
+			margin-top: $space-L;
+		}		
 	}
-	
+
+	.title-3{
+		margin: $space-S 0 0;
+
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+
 }

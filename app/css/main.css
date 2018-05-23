@@ -758,8 +758,12 @@ body {
 
 ==========================================================================
 \*======================================================================*/
+.l-floatGrid {
+  display: flex;
+}
+
 .l-floatGrid__item:first-child {
-  float: left;
+  margin-top: 24px;
   margin-right: 20px;
 }
 
@@ -773,18 +777,12 @@ body {
 .l-cta {
   width: 100%;
   position: relative;
-  padding: 40px 20px 40px;
   text-align: center;
-  background-color: #00679e;
-}
-@media screen and (min-width: 700px) {
-  .l-cta {
-    padding: 40px 20px 64px;
-  }
+  background-color: #003857;
 }
 .l-cta:before {
   content: "";
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png");
+  background: url("../img/NC-Partners-OnDemand-texture8.png");
   width: 100%;
   height: 100%;
   position: absolute;
@@ -793,26 +791,55 @@ body {
   z-index: 1;
   opacity: 0.6;
 }
+.l-cta .l-flexGrid__item:last-child {
+  margin-top: 40px;
+}
+@media screen and (min-width: 700px) {
+  .l-cta .l-flexGrid__item:last-child {
+    margin-top: 0;
+  }
+}
 .l-cta .content {
   position: relative;
   z-index: 2;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding: 40px;
   color: #fff;
 }
 .l-cta .content:before {
   content: "";
-  background-color: #005d8f;
-  width: 2px;
-  height: 100%;
+  background-color: #00679e;
+  width: 0;
+  height: 0;
   position: absolute;
   z-index: 1;
-  opacity: 0.6;
+}
+@media screen and (min-width: 700px) {
+  .l-cta .content {
+    padding: 64px 40px 64px;
+  }
+  .l-cta .content:before {
+    width: 2px;
+    height: 55%;
+    left: calc(50% - 2px);
+  }
 }
 .l-cta .content a.c-button {
-  margin-top: 40px;
   color: #00679e;
+  margin-top: 24px;
+}
+@media screen and (min-width: 700px) {
+  .l-cta .content a.c-button {
+    margin-top: 40px;
+  }
+}
+.l-cta .title-3 {
+  margin: 16px 0 0;
+}
+.l-cta .title-3:first-child {
+  margin-top: 0;
 }
 
 /*======================================================================*\
@@ -949,15 +976,15 @@ h3.c-cardTitle:after {
 }
 .hero:after {
   content: "";
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png");
-  background-color: #000;
+  /*background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png');*/
+  background: url("../img/NC-Partners-OnDemand-texture5.png");
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 2;
-  opacity: 0.6;
 }
 
 .heroTitle {
@@ -1074,7 +1101,8 @@ h3.c-cardTitle:after {
 }
 .bg-main:before {
   content: "";
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png");
+  /*background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png');*/
+  background: url("../img/NC-Partners-OnDemand-texture5.png");
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1092,6 +1120,17 @@ h3.c-cardTitle:after {
 }
 .bg-main .c-card {
   background-color: #fff;
+}
+
+.--imgRound {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 80px;
+  width: 80px;
+  display: inline-table;
+}
+.--imgRound img {
+  width: 100%;
 }
 
 /*
