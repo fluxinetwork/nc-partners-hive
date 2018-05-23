@@ -5,12 +5,37 @@
 
 ==========================================================================
 \*======================================================================*/
+.header-container.header-container--nav .homepage-container{
+	padding-left: $gutter/2;
+	padding-right: $gutter/2;
+
+	@media screen and (min-width: $break-M) {
+		padding-left: $gutter;
+		padding-right: $gutter;
+	}
+}
+
 .homepage-container {
     max-width: 100%;
     margin: auto;
 }
 
+.homepage-network__containe .homepage-container{
+	padding-bottom: 0 !important;
+}
+
 .lap-and-up--soft--sides{
 	padding-right: 0 !important;
 	padding-left: 0 !important;
+}
+
+.network__footer .homepage-container{
+	max-width: $maxW;
+	padding-left: $gutter/2;
+	padding-right: $gutter/2;
+
+	@media screen and (min-width: $break-M) {
+		padding-left: $gutter;
+		padding-right: $gutter;
+	}
 }
