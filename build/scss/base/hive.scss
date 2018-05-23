@@ -6,6 +6,11 @@
 ==========================================================================
 \*======================================================================*/
 
+.homepage-container {
+    max-width: 100%;
+    margin: auto;
+}
+
 .lap-and-up--soft--sides{
 	padding-right: 0 !important;
 	padding-left: 0 !important;
@@ -14,6 +19,7 @@
 .header-container.header-container--nav .homepage-container{
 	padding-left: $gutter/2 !important;
 	padding-right: $gutter/2 !important;
+	max-width: 1400px;
 
 	@media screen and (min-width: $break-M) {
 		padding-left: $gutter !important;
@@ -21,10 +27,6 @@
 	}
 }
 
-.homepage-container {
-    max-width: 100%;
-    margin: auto;
-}
 
 .homepage-network__containe .homepage-container.soft-triple--ends{
 	padding-bottom: 0 !important;
