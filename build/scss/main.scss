@@ -11,7 +11,6 @@
 
 @import "base/reset";
 @import "base/layers";
-@import "base/hive";
 @import "base/typography";
 
 
@@ -29,7 +28,7 @@
 
 
 // SPECIFIC 
-
+@import "specific/hive";
 @import "specific/homepage";
 @import "specific/header";
 @import "specific/footer";
