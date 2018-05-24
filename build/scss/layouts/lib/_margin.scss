@@ -42,3 +42,7 @@
 	@extend .l-marginTop;
 	@extend .l-marginBottom;
 }
+
+.--noMgTop{
+	margin-top: 0;
+}

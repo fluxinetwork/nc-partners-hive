@@ -78,5 +78,13 @@
 			margin-top: 0;
 		}
 	}
+	
+	&.--monoCta{
 
+		.content{
+			&:before{
+				display: none;
+			}
+		}
+	}
 }

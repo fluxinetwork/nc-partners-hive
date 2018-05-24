@@ -71,12 +71,16 @@
 .heroCta{
 	max-width: 720px;
 	margin: $space-L auto 0;
+	
+	.c-button{
+		@extend .title-3;
+	}
 
 	@media screen and (min-width: $break-M) {
 		margin: $space-XL auto 0;
 
-		.c-button{
-			min-width: 270px;
+		.c-button{			
+			min-width: 300px;
 		}
 	}
 }

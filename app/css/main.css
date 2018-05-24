@@ -181,19 +181,19 @@ body {
   }
 }
 
-.title-3, h3.title-3, h3.c-cardTitle {
+.title-3, .heroCta .c-button, h3.title-3, .heroCta h3.c-button, h3.c-cardTitle {
   font-size: 20px;
   font-family: "Fjalla One", sans-serif, sans-serif;
   line-height: normal;
   font-weight: normal;
 }
 @media screen and (min-width: 700px) {
-  .title-3, h3.title-3, h3.c-cardTitle {
+  .title-3, .heroCta .c-button, h3.title-3, .heroCta h3.c-button, h3.c-cardTitle {
     font-size: 23px;
   }
 }
 @media screen and (min-width: 960px) {
-  .title-3, h3.title-3, h3.c-cardTitle {
+  .title-3, .heroCta .c-button, h3.title-3, .heroCta h3.c-button, h3.c-cardTitle {
     font-size: 25px;
   }
 }
@@ -269,6 +269,7 @@ body {
 .para--min, .content .c-cardList li, .content .para--min, .content .c-cardList li {
   font-size: 14px;
   font-family: "Open sans";
+  line-height: normal;
 }
 @media screen and (min-width: 700px) {
   .para--min, .content .c-cardList li, .content .para--min, .content .c-cardList li {
@@ -281,8 +282,25 @@ body {
   }
 }
 
+.para--big, .content .para--big {
+  font-size: 20px;
+  font-family: "Open sans";
+  line-height: normal;
+}
+@media screen and (min-width: 700px) {
+  .para--big, .content .para--big {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .para--big, .content .para--big {
+    font-size: 25px;
+  }
+}
+
 .content ul {
   margin: 1em 0 0 0;
+  padding: 0 0 0 20px;
 }
 .content ul li {
   margin-top: 0.4em;
@@ -602,6 +620,10 @@ body {
   }
 }
 
+.--noMgTop {
+  margin-top: 0;
+}
+
 /*======================================================================*\
 ==========================================================================
 
@@ -819,11 +841,65 @@ body {
     margin-top: 40px;
   }
 }
-.l-cta h3.title-3 {
+.l-cta h3.title-3, .l-cta .heroCta h3.c-button, .heroCta .l-cta h3.c-button {
   color: #fff;
   margin: 16px 0 0;
 }
-.l-cta h3.title-3:first-child {
+.l-cta h3.title-3:first-child, .l-cta .heroCta h3.c-button:first-child, .heroCta .l-cta h3.c-button:first-child {
+  margin-top: 0;
+}
+.l-cta.--monoCta .content:before {
+  display: none;
+}
+
+/*======================================================================*\
+==========================================================================
+
+							LAYOUT : CASES
+
+==========================================================================
+\*======================================================================*/
+.l-cases .content {
+  margin: 64px 0;
+  padding: 0 0 64px;
+  position: relative;
+}
+@media screen and (min-width: 700px) {
+  .l-cases .content {
+    margin: 96px 0;
+    padding: 0 0 96px;
+  }
+}
+.l-cases .content.--noMgTop {
+  margin-top: 0;
+}
+.l-cases .content:before {
+  content: "";
+  width: 200px;
+  height: 1px;
+  left: calc(50% - 100px);
+  bottom: 0;
+  background-color: #d4d8da;
+  position: absolute;
+  z-index: 1;
+}
+@media screen and (min-width: 700px) {
+  .l-cases .content:before {
+    width: 470px;
+    left: calc(50% - 235px);
+  }
+}
+.l-cases .content:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.l-cases .content:last-child:before {
+  display: none;
+}
+.l-cases .content .title-3, .l-cases .content .heroCta .c-button, .heroCta .l-cases .content .c-button {
+  margin-bottom: 0;
+}
+.l-cases .content .title-3:first-child, .l-cases .content .heroCta .c-button:first-child, .heroCta .l-cases .content .c-button:first-child {
   margin-top: 0;
 }
 
@@ -1004,7 +1080,7 @@ h3.c-cardTitle:after {
     margin: 64px auto 0;
   }
   .heroCta .c-button {
-    min-width: 270px;
+    min-width: 300px;
   }
 }
 
@@ -1114,6 +1190,27 @@ h3.c-cardTitle:after {
 /*.homepage-container.lap-and-up--soft--sides .custom-color-footer-links{
 	color: #63737e !important;
 }*/
+.content.--intro {
+  max-width: 700px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 700px) {
+  .content.--intro {
+    margin-top: 64px;
+  }
+}
+.content.--intro .para--big {
+  margin-top: 0;
+}
+.content.--intro .title-3, .content.--intro .heroCta .c-button, .heroCta .content.--intro .c-button {
+  margin: 24px 0 0;
+}
+@media screen and (min-width: 700px) {
+  .content.--intro .title-3, .content.--intro .heroCta .c-button, .heroCta .content.--intro .c-button {
+    margin: 40px 0 0;
+  }
+}
+
 .sectionTitle {
   padding: 64px 0 40px;
   margin: 0;

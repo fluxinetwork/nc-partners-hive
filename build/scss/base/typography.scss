@@ -132,10 +132,18 @@ $h6-font-sizes: (
 .para--min, .content .para--min{
 	@include font-size($h5-font-sizes);	
 	font-family: $font-txt;
+	line-height: normal;
+}
+
+.para--big, .content .para--big{
+	@include font-size($h3-font-sizes);	
+	font-family: $font-txt;
+	line-height: normal;
 }
 
 .content ul {
 	margin: 1em 0 0 0;
+	padding: 0 0 0 $gutter/2;
 
 	li {
 		@extend .para;

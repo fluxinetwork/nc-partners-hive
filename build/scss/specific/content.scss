@@ -1,4 +1,25 @@
-.content {}
+.content {
+	&.--intro{
+		max-width: $break-M;
+		margin-top: $space-L;
+		
+		@media screen and (min-width: $break-M) {
+			margin-top: $space-XL;
+		}
+
+		.para--big{
+			margin-top: 0;
+		}
+
+		.title-3{
+			margin: $space-M 0 0;
+
+			@media screen and (min-width: $break-M) {
+				margin: $space-L 0 0;
+			}
+		}
+	}
+}
 
 .sectionTitle{
 	@extend .title-1;
