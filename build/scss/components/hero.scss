@@ -20,13 +20,28 @@
 		left: 0;
 		top: 0;
 		z-index: 1;	
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	&#hero__home:before{
-		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg2.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
-	
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-home.jpg');		
+	}
+
+	&#hero__consulting:before{
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-consulting.jpg');		
+	}
+
+	&#hero__management:before{
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-management.jpg');		
+	}
+
+	&#hero__quiNousSommes:before{
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg');		
+	}
+
+	&#hero__modeEmploi:before{
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-mode-emploi.jpg');		
 	}
 
 	&:after{

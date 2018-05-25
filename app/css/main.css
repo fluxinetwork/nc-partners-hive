@@ -1029,11 +1029,23 @@ h3.c-cardTitle:after {
   left: 0;
   top: 0;
   z-index: 1;
-}
-.hero#hero__home:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.hero#hero__home:before {
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-home.jpg");
+}
+.hero#hero__consulting:before {
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-consulting.jpg");
+}
+.hero#hero__management:before {
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-management.jpg");
+}
+.hero#hero__quiNousSommes:before {
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg");
+}
+.hero#hero__modeEmploi:before {
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-mode-emploi.jpg");
 }
 .hero:after {
   content: "";
