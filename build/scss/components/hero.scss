@@ -44,19 +44,20 @@
 	&#hero__management:before{
 		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg');
 		background-size: cover;
-		background-repeat: no-repeat;		
+		background-repeat: no-repeat;
+		background-position: bottom;	
 	}
 
 	&#hero__quiNousSommes:before{
 		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg');
 		background-size: cover;
-		background-repeat: no-repeat;	
-	}
+		background-repeat: no-repeat;	}
 
 	&#hero__modeEmploi:before{
 		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-mode-emploi.jpg');
 		background-size: cover;
-		background-repeat: no-repeat;	
+		background-repeat: no-repeat;
+		background-position: bottom;
 	}
 
 	&:after{
@@ -110,7 +111,7 @@
 		margin: $space-XL auto 0;
 
 		.c-button{			
-			min-width: 300px;
+			min-width: 320px;
 		}
 	}
 }

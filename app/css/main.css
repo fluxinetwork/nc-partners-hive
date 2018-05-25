@@ -318,6 +318,10 @@ body {
   color: #132345;
 }
 
+.content .title-1, .content .sectionTitle, .content .title-2, .content .title-3, .content .heroCta .c-button, .heroCta .content .c-button, .content .title-4, .content .c-button, .content .title-5, .content .title-6 {
+  margin-bottom: 0;
+}
+
 /**/
 @font-face {
   font-family: "Flaticon";
@@ -995,6 +999,18 @@ body {
   top: 2px;
   margin-right: 16px;
 }
+.c-card.-imgCard {
+  padding: 10px;
+  overflow: hidden;
+  border: none;
+}
+
+.-imgCard {
+  min-height: 250px;
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 h3.c-cardTitle {
   position: relative;
@@ -1055,6 +1071,7 @@ h3.c-cardTitle:after {
   background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 .hero#hero__quiNousSommes:before {
   background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg");
@@ -1065,6 +1082,7 @@ h3.c-cardTitle:after {
   background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-mode-emploi.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 .hero:after {
   content: "";
@@ -1111,7 +1129,7 @@ h3.c-cardTitle:after {
     margin: 64px auto 0;
   }
   .heroCta .c-button {
-    min-width: 300px;
+    min-width: 320px;
   }
 }
 
@@ -1230,9 +1248,6 @@ h3.c-cardTitle:after {
     margin-top: 64px;
   }
 }
-.content.--intro .para--big {
-  margin-top: 0;
-}
 .content.--intro .title-3, .content.--intro .heroCta .c-button, .heroCta .content.--intro .c-button {
   margin: 24px 0 0;
 }
@@ -1240,6 +1255,9 @@ h3.c-cardTitle:after {
   .content.--intro .title-3, .content.--intro .heroCta .c-button, .heroCta .content.--intro .c-button {
     margin: 40px 0 0;
   }
+}
+.content .title-2 {
+  margin-top: 40px;
 }
 
 .sectionTitle {

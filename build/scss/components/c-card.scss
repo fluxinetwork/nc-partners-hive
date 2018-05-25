@@ -44,6 +44,19 @@
 			margin-right: 16px;
 		}
 	}
+
+	&.-imgCard{
+		padding: $gutter/4;
+		overflow: hidden;
+		border: none;
+	}
+}
+
+.-imgCard{
+	min-height: 250px;
+	background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 h3.c-cardTitle{

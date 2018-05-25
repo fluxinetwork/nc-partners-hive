@@ -162,6 +162,11 @@ $h6-font-sizes: (
 		color: $c-dark;
 	}
 }
+
+.content .title-1, .content .title-2, .content .title-3, .content .title-4, .content .title-5, .content .title-6{
+	margin-bottom:0; 
+}
+
 /**/
 
 //========================================================== FLATICON

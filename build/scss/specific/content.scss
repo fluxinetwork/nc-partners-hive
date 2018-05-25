@@ -7,10 +7,6 @@
 			margin-top: $space-XL;
 		}
 
-		.para--big{
-			margin-top: 0;
-		}
-
 		.title-3{
 			margin: $space-M 0 0;
 
@@ -18,6 +14,10 @@
 				margin: $space-L 0 0;
 			}
 		}
+	}
+
+	.title-2{
+		margin-top: $space-L;
 	}
 }
 
