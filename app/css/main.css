@@ -848,6 +848,9 @@ body {
 .l-cta h3.title-3:first-child, .l-cta .heroCta h3.c-button:first-child, .heroCta .l-cta h3.c-button:first-child {
   margin-top: 0;
 }
+.l-cta.--monoCta .content {
+  max-width: 700px;
+}
 .l-cta.--monoCta .content:before {
   display: none;
 }
@@ -1020,6 +1023,14 @@ h3.c-cardTitle:after {
   position: relative;
   background-color: #d4d8da;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 700px) {
+  .hero {
+    min-height: 500px;
+  }
 }
 .hero:before {
   content: "";
@@ -1029,23 +1040,31 @@ h3.c-cardTitle:after {
   left: 0;
   top: 0;
   z-index: 1;
+}
+.hero#hero__home:before {
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-.hero#hero__home:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-home.jpg");
-}
 .hero#hero__consulting:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-consulting.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-consulting.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero#hero__management:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-management.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero#hero__quiNousSommes:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero#hero__modeEmploi:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/7affa4d3/app/img/NC-Partners-OnDemand-bg-mode-emploi.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-mode-emploi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero:after {
   content: "";

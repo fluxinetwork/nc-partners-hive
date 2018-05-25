@@ -80,8 +80,10 @@
 	}
 	
 	&.--monoCta{
-
+		
 		.content{
+			max-width: $break-M;
+			
 			&:before{
 				display: none;
 			}
