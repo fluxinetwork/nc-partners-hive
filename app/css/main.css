@@ -186,6 +186,7 @@ body {
   font-family: "Fjalla One", sans-serif, sans-serif;
   line-height: normal;
   font-weight: normal;
+  margin-top: 24px;
 }
 @media screen and (min-width: 700px) {
   .title-3, .heroCta .c-button, h3.title-3, .heroCta h3.c-button, h3.c-cardTitle {
@@ -246,17 +247,17 @@ body {
   }
 }
 
-.content p, .para, .content ul li, .heroBaseline {
+.content p, .para, .content ul li, .content ol li, .heroBaseline {
   font-size: 16px;
   font-family: "Open sans";
 }
 @media screen and (min-width: 700px) {
-  .content p, .para, .content ul li, .heroBaseline {
+  .content p, .para, .content ul li, .content ol li, .heroBaseline {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 960px) {
-  .content p, .para, .content ul li, .heroBaseline {
+  .content p, .para, .content ul li, .content ol li, .heroBaseline {
     font-size: 20px;
   }
 }
@@ -298,11 +299,11 @@ body {
   }
 }
 
-.content ul {
+.content ul, .content ol {
   margin: 1em 0 0 0;
   padding: 0 0 0 20px;
 }
-.content ul li {
+.content ul li, .content ol li {
   margin-top: 0.4em;
   line-height: 1.1;
 }
@@ -1017,7 +1018,7 @@ body {
 h3.c-cardTitle {
   position: relative;
   text-align: center;
-  margin: 16px 0 24px;
+  margin: 16px 0 0;
 }
 h3.c-cardTitle:after {
   content: "";
@@ -1147,7 +1148,7 @@ h3.c-cardTitle:after {
   margin: auto;
 }
 
-.lap-and-up--soft--sides {
+.lap-and-up--soft--sides, .homepage-container.soft--sides {
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
@@ -1165,7 +1166,12 @@ h3.c-cardTitle:after {
 }
 
 .homepage-network__container .homepage-container {
+  padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+.homepage-network__container .ne-event-cover {
+  display: none !important;
 }
 
 .network__footer .homepage-container {

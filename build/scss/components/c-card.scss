@@ -70,7 +70,7 @@
 h3.c-cardTitle{
 	position: relative;
 	text-align: center;
-	margin: $space-S 0 $space-M;
+	margin: $space-S 0 0;
 	&:after{
 		content: "";
 		background-color: $c-accent;
