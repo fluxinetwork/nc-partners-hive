@@ -83,6 +83,9 @@ h3.c-cardTitle{
 	}
 }
 
-.content .c-cardList li{
-	@extend .para--min;
+.content .c-cardList {
+	margin-top: $space-M;
+	li{
+		@extend .para--min;
+	}
 }

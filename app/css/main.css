@@ -58,7 +58,7 @@ Make background with :after and fancy shadow with :before
 }
 
 .is-none {
-  display: none !important;
+  display: none;
 }
 
 /*======================================================================*\
@@ -1028,6 +1028,10 @@ h3.c-cardTitle:after {
   position: absolute;
   left: calc(50% - 30px);
   bottom: -8px;
+}
+
+.content .c-cardList {
+  margin-top: 24px;
 }
 
 /*======================================================================*\
