@@ -992,22 +992,24 @@ body {
 .c-card.-exp .citation:first-child {
   margin-top: 0;
 }
-.c-card.-exp .fla-left {
-  font-size: 26px;
-  line-height: 26px;
-  position: relative;
-  top: 2px;
-  margin-right: 16px;
-}
 .c-card.-imgCard {
-  padding: 10px;
   overflow: hidden;
   border: none;
+  padding: 0;
 }
-
-.-imgCard {
+.c-card.-imgBg-1 {
+  overflow: hidden;
+  border: none;
   min-height: 250px;
   background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.c-card.-imgBg-2 {
+  overflow: hidden;
+  border: none;
+  min-height: 250px;
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1307,6 +1309,14 @@ h3.c-cardTitle:after {
 }
 .--imgRound img {
   width: 100%;
+}
+
+.fla-left {
+  font-size: 26px;
+  line-height: 26px;
+  position: relative;
+  top: 2px;
+  margin-right: 16px;
 }
 
 /*

@@ -35,29 +35,37 @@
 			&:first-child{
 				margin-top: 0;
 			}
-		}
-		.fla-left{
-			font-size: 26px;
-			line-height: 26px;
-			position: relative;
-			top: 2px;
-			margin-right: 16px;
-		}
-	}
+		}		
+	}	
 
-	&.-imgCard{
-		padding: $gutter/4;
+	&.-imgCard{	
 		overflow: hidden;
 		border: none;
+		padding: 0;
+	}
+
+	&.-imgBg-1{		
+		overflow: hidden;
+		border: none;
+		min-height: 250px;
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&.-imgBg-2{		
+		overflow: hidden;
+		border: none;
+		min-height: 250px;
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 }
 
-.-imgCard{
-	min-height: 250px;
-	background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+
+
+
 
 h3.c-cardTitle{
 	position: relative;
