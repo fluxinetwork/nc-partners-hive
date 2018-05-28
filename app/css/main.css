@@ -1098,7 +1098,7 @@ h3.c-cardTitle:after {
   background-color: #7f98d4;
 }
 
-.-chart .title-3, .-chart .heroCta .c-button, .heroCta .-chart .c-button {
+.-chart h3.title-3, .-chart .heroCta h3.c-button, .heroCta .-chart h3.c-button {
   margin-top: 0;
 }
 
