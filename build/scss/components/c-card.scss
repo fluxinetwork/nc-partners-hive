@@ -21,7 +21,10 @@
 	}	
 
 	.c-button{
-		margin-top: $space-L;
+		margin-top: $space-M;
+		@media screen and (min-width: $break-M) {
+			margin-top: $space-L;
+		}
 	}
 	
 	.c-icon{

@@ -25,12 +25,12 @@
 
 .sectionTitle{
 	@extend .title-1;
-	padding:$space-XL 0 $space-L;
+	padding:$space-XL 0;
 	margin: 0;
 	text-align: center;
 
 	@media screen and (min-width: $break-M) {
-		padding:$space-XXL 0 $space-XL;
+		padding:$space-XXL 0;
 	}
 }
 
