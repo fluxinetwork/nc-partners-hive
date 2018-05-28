@@ -1277,6 +1277,12 @@ h3.c-cardTitle:after {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .homepage-network__container {
+    padding-top: 65px !important;
+  }
+}
+
 .homepage-network__container .homepage-container {
   padding-top: 0 !important;
   padding-bottom: 0 !important;

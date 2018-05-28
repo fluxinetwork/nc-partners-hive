@@ -46,7 +46,11 @@
 	}
 }
 
-
+.homepage-network__container {
+	@media screen and (max-width: $break-M) {
+	    padding-top: 65px !important;
+	}
+}
 
 .homepage-network__container .homepage-container{
 	padding-top: 0 !important;
