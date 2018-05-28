@@ -59,7 +59,15 @@
 		background-repeat: no-repeat;
 		background-position: bottom;
 	}
+	
+	&#hero__talents:before{
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-talents.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom;
+	}
 
+	
 	&:after{
 		content:"";
 		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/9f4cf653/app/img/NC-Partners-OnDemand-texture5.png');
