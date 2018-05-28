@@ -64,6 +64,16 @@
 	}
 }
 
+.content .c-cardList {
+	margin-top: $space-S;
+	@media screen and (min-width: $break-M) {
+		margin-top: $space-M;
+	}
+	li{
+		@extend .para--min;
+	}
+}
+
 .--imgRound{
 	border-radius: 50%;
 	overflow: hidden;

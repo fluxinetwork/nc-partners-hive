@@ -73,10 +73,6 @@
 	}
 }
 
-
-
-
-
 h3.c-cardTitle{
 	position: relative;
 	text-align: center;
@@ -90,12 +86,5 @@ h3.c-cardTitle{
 		left: calc(50% - 30px);
 		bottom: -$space;
 		
-	}
-}
-
-.content .c-cardList {
-	margin-top: $space-M;
-	li{
-		@extend .para--min;
 	}
 }

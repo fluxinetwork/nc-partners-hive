@@ -267,18 +267,18 @@ body {
   line-height: normal;
 }
 
-.para--min, .content .c-cardList li, .c-chartLegende li, .content .para--min, .content .c-cardList li, .content .c-chartLegende li, .c-chartLegende .content li {
+.para--min, .c-chartLegende li, .content .c-cardList li, .content .para--min, .content .c-chartLegende li, .c-chartLegende .content li, .content .c-cardList li {
   font-size: 14px;
   font-family: "Open sans";
   line-height: normal;
 }
 @media screen and (min-width: 700px) {
-  .para--min, .content .c-cardList li, .c-chartLegende li, .content .para--min, .content .c-cardList li, .content .c-chartLegende li, .c-chartLegende .content li {
+  .para--min, .c-chartLegende li, .content .c-cardList li, .content .para--min, .content .c-chartLegende li, .c-chartLegende .content li, .content .c-cardList li {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 960px) {
-  .para--min, .content .c-cardList li, .c-chartLegende li, .content .para--min, .content .c-cardList li, .content .c-chartLegende li, .c-chartLegende .content li {
+  .para--min, .c-chartLegende li, .content .c-cardList li, .content .para--min, .content .c-chartLegende li, .c-chartLegende .content li, .content .c-cardList li {
     font-size: 16px;
   }
 }
@@ -1068,10 +1068,6 @@ h3.c-cardTitle:after {
   bottom: -8px;
 }
 
-.content .c-cardList {
-  margin-top: 24px;
-}
-
 /*======================================================================*\
 ==========================================================================
 
@@ -1420,6 +1416,15 @@ h3.c-cardTitle:after {
 }
 .bg-main .c-card {
   background-color: #fff;
+}
+
+.content .c-cardList {
+  margin-top: 16px;
+}
+@media screen and (min-width: 700px) {
+  .content .c-cardList {
+    margin-top: 24px;
+  }
 }
 
 .--imgRound {
