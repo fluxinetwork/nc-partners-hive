@@ -1278,6 +1278,10 @@ h3.c-cardTitle:after {
   }
 }
 
+.homepage-network__container {
+  padding-top: 70px !important;
+}
+
 .homepage-network__container .homepage-container {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
