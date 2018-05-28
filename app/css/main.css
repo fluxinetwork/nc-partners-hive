@@ -914,6 +914,27 @@ body {
 /*======================================================================*\
 ==========================================================================
 
+							LAYOUT : LOGOD
+
+==========================================================================
+\*======================================================================*/
+.l-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+.l-logos .c-logo {
+  padding: 10px;
+}
+.l-logos .c-logo img {
+  width: 100%;
+  max-width: 150px;
+}
+
+/*======================================================================*\
+==========================================================================
+
 							BUTTON
 
 ==========================================================================
@@ -1037,6 +1058,53 @@ h3.c-cardTitle:after {
 /*======================================================================*\
 ==========================================================================
 
+							CHART
+
+==========================================================================
+\*======================================================================*/
+.c-chart {
+  margin-top: 24px;
+}
+
+.c-chartLegende {
+  margin-top: 24px;
+}
+.c-chartLegende li {
+  list-style-type: none;
+}
+
+.c-chartLegende__dot {
+  position: relative;
+}
+.c-chartLegende__dot:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #1f3870;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.c-chartLegende li:nth-child(2) .c-chartLegende__dot:before {
+  background-color: #324a7f;
+}
+
+.c-chartLegende li:nth-child(3) .c-chartLegende__dot:before {
+  background-color: #5a76b2;
+}
+
+.c-chartLegende li:nth-child(4) .c-chartLegende__dot:before {
+  background-color: #7f98d4;
+}
+
+.-chart .title-3, .-chart .heroCta .c-button, .heroCta .-chart .c-button {
+  margin-top: 0;
+}
+
+/*======================================================================*\
+==========================================================================
+
 							HERO
 
 ==========================================================================
@@ -1087,6 +1155,12 @@ h3.c-cardTitle:after {
 }
 .hero#hero__modeEmploi:before {
   background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-mode-emploi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.hero#hero__talents:before {
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-talents.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1327,6 +1401,11 @@ h3.c-cardTitle:after {
   position: relative;
   top: 2px;
   margin-right: 16px;
+}
+
+/* Helpers */
+.t-center {
+  text-align: center;
 }
 
 /*

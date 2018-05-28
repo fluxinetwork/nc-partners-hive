@@ -1,0 +1,52 @@
+/*======================================================================*\
+==========================================================================
+
+							CHART
+
+==========================================================================
+\*======================================================================*/
+
+.c-chart{
+	margin-top: $space-M;
+}
+
+.c-chartLegende{
+	margin-top: $space-M;
+
+	li{
+		list-style-type: none;
+	}
+}
+
+.c-chartLegende__dot{
+	position: relative;
+
+	&:before{
+		content:"";
+		width: 16px;
+		height: 16px;
+		background-color: $c-chart-1;
+		border-radius: 50%;
+		display: inline-block;
+		margin-right: 16px;
+	}
+
+	
+}
+
+.c-chartLegende li:nth-child(2) .c-chartLegende__dot:before{
+	background-color: $c-chart-2;
+}
+.c-chartLegende li:nth-child(3) .c-chartLegende__dot:before{
+	background-color: $c-chart-3;
+}
+.c-chartLegende li:nth-child(4) .c-chartLegende__dot:before{
+	background-color: $c-chart-4;
+}
+
+.-chart{
+
+	.title-3{
+		margin-top: 0;
+	}
+}
