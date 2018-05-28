@@ -8,10 +8,11 @@
 
 .c-card {	
 	border:1px solid $c-light;
-	padding: $space-M $gutter $space-L;
+	padding: $space-M;
 	margin-top: $space-M;
 	
 	@media screen and (min-width: $break-M) {
+		padding: $space-L;
 		margin-top: $gutter;
 	}
 
@@ -44,22 +45,28 @@
 		padding: 0;
 	}
 
-	&.-imgBg-1{		
-		overflow: hidden;
-		border: none;
-		min-height: 250px;
-		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
+	&.-imgBg-1, &.-imgBg-2{		
+		display: none;
 	}
 
-	&.-imgBg-2{		
-		overflow: hidden;
-		border: none;
-		min-height: 250px;
-		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
+	@media screen and (min-width: $break-M) {
+		&.-imgBg-1{		
+			overflow: hidden;
+			border: none;
+			min-height: 250px;
+			background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		&.-imgBg-2{		
+			overflow: hidden;
+			border: none;
+			min-height: 250px;
+			background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
 	}
 }
 
@@ -70,7 +77,7 @@
 h3.c-cardTitle{
 	position: relative;
 	text-align: center;
-	margin: $space-S 0 0;
+	margin: $space-S 0 $space-S*2;
 	&:after{
 		content: "";
 		background-color: $c-accent;

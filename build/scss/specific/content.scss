@@ -19,6 +19,8 @@
 	.title-2{
 		margin-top: $space-L;
 	}
+
+	
 }
 
 .sectionTitle{
@@ -38,8 +40,7 @@
 
 	&:before{
 		content:"";
-		/*background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png');*/
-		background: url('../img/NC-Partners-OnDemand-texture5.png');		
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture5.png');		
 		width: 100%;
 		height: 100%;
 		position: absolute;

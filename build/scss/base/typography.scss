@@ -95,7 +95,7 @@ $h6-font-sizes: (
 	font-family: $font-h, sans-serif;
 	line-height: normal;
 	font-weight: normal;
-	margin-top: $space-M;
+	margin-top: $space-L;
 }
 
 
@@ -155,12 +155,13 @@ $h6-font-sizes: (
 
 .content p a,
 .content li a {
-	color: $c-main;
+	color: $c-main !important;
 	font-weight: 900;
 	text-decoration: underline;
 
 	&:hover {
-		color: $c-dark;
+		color: $c-accent !important;
+		text-decoration: none;
 	}
 }
 

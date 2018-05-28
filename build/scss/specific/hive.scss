@@ -6,6 +6,21 @@
 ==========================================================================
 \*======================================================================*/
 
+.header-container {
+	@media screen and (max-width: $break-M) {
+	    padding-top: 0 !important;
+	    height: 70px !important;
+	}
+}
+
+.mobile__menu {
+    margin-top: 70px;
+}
+
+.header__logo.palm--soft--left {
+    padding-left: 0 !important;
+}
+
 .homepage-container {
     max-width: 100%;
     margin: auto;

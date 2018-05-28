@@ -105,6 +105,10 @@
 .heroContent{
 	position: relative;	
 	z-index: 3;
+	
+	@media screen and (max-width: $break-M) {
+		margin-top: $space-L;
+	}
 }
 
 .heroCta{

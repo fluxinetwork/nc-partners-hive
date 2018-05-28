@@ -186,7 +186,7 @@ body {
   font-family: "Fjalla One", sans-serif, sans-serif;
   line-height: normal;
   font-weight: normal;
-  margin-top: 24px;
+  margin-top: 40px;
 }
 @media screen and (min-width: 700px) {
   .title-3, .heroCta .c-button, h3.title-3, .heroCta h3.c-button, h3.c-cardTitle {
@@ -267,18 +267,18 @@ body {
   line-height: normal;
 }
 
-.para--min, .content .c-cardList li, .content .para--min, .content .c-cardList li {
+.para--min, .content .c-cardList li, .c-chartLegende li, .content .para--min, .content .c-cardList li, .content .c-chartLegende li, .c-chartLegende .content li {
   font-size: 14px;
   font-family: "Open sans";
   line-height: normal;
 }
 @media screen and (min-width: 700px) {
-  .para--min, .content .c-cardList li, .content .para--min, .content .c-cardList li {
+  .para--min, .content .c-cardList li, .c-chartLegende li, .content .para--min, .content .c-cardList li, .content .c-chartLegende li, .c-chartLegende .content li {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 960px) {
-  .para--min, .content .c-cardList li, .content .para--min, .content .c-cardList li {
+  .para--min, .content .c-cardList li, .c-chartLegende li, .content .para--min, .content .c-cardList li, .content .c-chartLegende li, .c-chartLegende .content li {
     font-size: 16px;
   }
 }
@@ -310,13 +310,14 @@ body {
 
 .content p a,
 .content li a {
-  color: #46555f;
+  color: #46555f !important;
   font-weight: 900;
   text-decoration: underline;
 }
 .content p a:hover,
 .content li a:hover {
-  color: #132345;
+  color: #00679e !important;
+  text-decoration: none;
 }
 
 .content .title-1, .content .sectionTitle, .content .title-2, .content .title-3, .content .heroCta .c-button, .heroCta .content .c-button, .content .title-4, .content .c-button, .content .title-5, .content .title-6 {
@@ -626,7 +627,7 @@ body {
 }
 
 .--noMgTop {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 /*======================================================================*\
@@ -984,11 +985,12 @@ body {
 \*======================================================================*/
 .c-card {
   border: 1px solid #d4d8da;
-  padding: 24px 40px 40px;
+  padding: 24px;
   margin-top: 24px;
 }
 @media screen and (min-width: 700px) {
   .c-card {
+    padding: 40px;
     margin-top: 40px;
   }
 }
@@ -1024,27 +1026,32 @@ body {
   border: none;
   padding: 0;
 }
-.c-card.-imgBg-1 {
-  overflow: hidden;
-  border: none;
-  min-height: 250px;
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+.c-card.-imgBg-1, .c-card.-imgBg-2 {
+  display: none;
 }
-.c-card.-imgBg-2 {
-  overflow: hidden;
-  border: none;
-  min-height: 250px;
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+@media screen and (min-width: 700px) {
+  .c-card.-imgBg-1 {
+    overflow: hidden;
+    border: none;
+    min-height: 250px;
+    background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .c-card.-imgBg-2 {
+    overflow: hidden;
+    border: none;
+    min-height: 250px;
+    background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 h3.c-cardTitle {
   position: relative;
   text-align: center;
-  margin: 16px 0 0;
+  margin: 16px 0 32px;
 }
 h3.c-cardTitle:after {
   content: "";
@@ -1205,6 +1212,11 @@ h3.c-cardTitle:after {
   position: relative;
   z-index: 3;
 }
+@media screen and (max-width: 700px) {
+  .heroContent {
+    margin-top: 40px;
+  }
+}
 
 .heroCta {
   max-width: 720px;
@@ -1226,6 +1238,21 @@ h3.c-cardTitle:after {
 
 ==========================================================================
 \*======================================================================*/
+@media screen and (max-width: 700px) {
+  .header-container {
+    padding-top: 0 !important;
+    height: 70px !important;
+  }
+}
+
+.mobile__menu {
+  margin-top: 70px;
+}
+
+.header__logo.palm--soft--left {
+  padding-left: 0 !important;
+}
+
 .homepage-container {
   max-width: 100%;
   margin: auto;
@@ -1368,8 +1395,7 @@ h3.c-cardTitle:after {
 }
 .bg-main:before {
   content: "";
-  /*background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture1.png');*/
-  background: url("../img/NC-Partners-OnDemand-texture5.png");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/d64dc3f7/app/img/NC-Partners-OnDemand-texture5.png");
   width: 100%;
   height: 100%;
   position: absolute;
