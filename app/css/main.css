@@ -965,6 +965,11 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-shadow: 0 0 20px rgba(0, 103, 158, 0.5);
 }
+.c-button i {
+  position: relative;
+  top: -2px;
+  margin-right: 8px;
+}
 
 .content a.c-button {
   color: #fff;
