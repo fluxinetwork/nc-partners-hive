@@ -1147,7 +1147,7 @@ h3.c-cardTitle:after {
 }
 @media screen and (max-width: 700px) {
   .hero#hero__home {
-    padding-top: 120px;
+    padding-top: 80px;
   }
 }
 .hero#hero__home:before {

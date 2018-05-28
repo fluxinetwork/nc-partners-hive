@@ -31,7 +31,7 @@
 
 	&#hero__home{
 		@media screen and (max-width: $break-M) {
-			padding-top:$gutter*3;
+			padding-top:$gutter*2;
 		}
 
 		&:before{
