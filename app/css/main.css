@@ -1111,7 +1111,7 @@ h3.c-cardTitle:after {
   background-color: #7f98d4;
 }
 
-.-chart h3.title-3, .-chart .heroCta h3.c-button, .heroCta .-chart h3.c-button {
+.--chart h3.title-3, .--chart .heroCta h3.c-button, .heroCta .--chart h3.c-button {
   margin-top: 0;
 }
 
@@ -1247,6 +1247,10 @@ h3.c-cardTitle:after {
   margin-top: 70px;
 }
 
+.custom-color-header-links-public {
+  color: #46555f;
+}
+
 .header__logo.palm--soft--left {
   padding-left: 0 !important;
 }
@@ -1273,8 +1277,10 @@ h3.c-cardTitle:after {
   }
 }
 
-.homepage-network__container {
-  padding-top: 70px !important;
+@media screen and (min-width: 700px) {
+  .homepage-network__container {
+    padding-top: 70px !important;
+  }
 }
 
 .homepage-network__container .homepage-container {

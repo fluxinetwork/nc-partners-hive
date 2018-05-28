@@ -17,6 +17,10 @@
     margin-top: 70px;
 }
 
+.custom-color-header-links-public{
+	color: $c-main;
+}
+
 .header__logo.palm--soft--left {
     padding-left: 0 !important;
 }
@@ -43,7 +47,9 @@
 }
 
 .homepage-network__container {
-    padding-top: 70px !important;
+	@media screen and (min-width: $break-M) {
+	    padding-top: 70px !important;
+	}
 }
 
 .homepage-network__container .homepage-container{
