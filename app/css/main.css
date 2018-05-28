@@ -911,6 +911,22 @@ body {
 .l-cases .content .title-3:first-child, .l-cases .content .heroCta .c-button:first-child, .heroCta .l-cases .content .c-button:first-child {
   margin-top: 0;
 }
+.l-cases .content .c-card.-imgCard {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+@media screen and (max-width: 700px) {
+  .l-cases .content .c-card.-imgCard {
+    max-width: 410px;
+    margin: 0 auto;
+  }
+  .l-cases .content .c-card.-imgCard img {
+    display: block;
+    width: 100%;
+  }
+}
 
 /*======================================================================*\
 ==========================================================================

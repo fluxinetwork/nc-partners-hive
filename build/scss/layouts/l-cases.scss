@@ -53,6 +53,24 @@
 			&:first-child{
 				margin-top: 0;
 			}	
+		}		
+
+		.c-card.-imgCard{
+			display: block;
+			padding: 0;
+			overflow: hidden;
+			border-radius: 50%;
+
+			@media screen and (max-width: $break-M) {								
+				max-width: 410px;
+				margin: 0 auto;
+
+				img{
+					display: block;
+					width: 100%;
+				}
+			}
+			
 		}
 	}
 }
