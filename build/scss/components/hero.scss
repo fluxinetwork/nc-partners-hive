@@ -29,10 +29,16 @@
 		z-index: 1;		
 	}
 
-	&#hero__home:before{
-		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-home.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;		
+	&#hero__home{
+		@media screen and (max-width: $break-M) {
+			padding-top:$gutter*3;
+		}
+
+		&:before{
+			background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-home.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;		
+		}
 	}
 
 	&#hero__consulting:before{
@@ -70,16 +76,14 @@
 	
 	&:after{
 		content:"";
-		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/9f4cf653/app/img/NC-Partners-OnDemand-texture5.png');
-		/*background: url('../img/NC-Partners-OnDemand-texture5.png');*/
+		background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/9f4cf653/app/img/NC-Partners-OnDemand-texture5.png');		
 		background-color: rgba(0,0,0,0.6);
 		width: 100%;
 		height: 100%;
 		position: absolute;
 		left: 0;
 		top: 0;
-		z-index: 2;
-		//opacity: 0.6;
+		z-index: 2;		
 	}
 }
 
@@ -105,10 +109,6 @@
 .heroContent{
 	position: relative;	
 	z-index: 3;
-	
-	@media screen and (max-width: $break-M) {
-		margin-top: $space-L;
-	}
 }
 
 .heroCta{
@@ -117,6 +117,7 @@
 	
 	.c-button{
 		@extend .title-3;
+		margin-top: 0;
 	}
 
 	@media screen and (min-width: $break-M) {
