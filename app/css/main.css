@@ -1161,8 +1161,10 @@ h3.c-cardTitle:after {
   top: 0;
   z-index: 1;
 }
-.hero#hero__home {
-  margin-top: 65px;
+@media screen and (min-width: 700px) {
+  .hero#hero__home {
+    margin-top: 65px;
+  }
 }
 .hero#hero__home:before {
   background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-home.jpg");

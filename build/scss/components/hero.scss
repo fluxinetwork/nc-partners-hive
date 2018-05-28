@@ -30,7 +30,9 @@
 	}
 
 	&#hero__home{
-		margin-top: 65px;
+		@media screen and (min-width: $break-M) {
+			margin-top: 65px;
+		}
 		&:before{
 			background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-home.jpg');
 			background-size: cover;
