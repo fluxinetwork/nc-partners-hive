@@ -30,10 +30,7 @@
 	}
 
 	&#hero__home{
-		@media screen and (max-width: $break-M) {
-			padding-top:$gutter*2;
-		}
-
+		
 		&:before{
 			background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-home.jpg');
 			background-size: cover;
