@@ -16,7 +16,7 @@
 		margin-top: $gutter;
 	}
 
-	&:first-child{
+	&:first-child, &.--first{
 		margin-top: 0;
 	}	
 

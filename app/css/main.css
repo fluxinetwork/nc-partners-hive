@@ -994,7 +994,7 @@ body {
     margin-top: 40px;
   }
 }
-.c-card:first-child {
+.c-card:first-child, .c-card.--first {
   margin-top: 0;
 }
 .c-card .c-button {
@@ -1274,12 +1274,6 @@ h3.c-cardTitle:after {
   .header-container.header-container--nav .homepage-container {
     padding-left: 40px !important;
     padding-right: 40px !important;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .homepage-network__container {
-    padding-top: 70px !important;
   }
 }
 
