@@ -14,11 +14,12 @@
 
 	.c-logo{	
 		
-		padding: $gutter/4;
+		padding: $gutter/4 $gutter/2;
 
 		img{
 			width: 100%;
 			max-width: 150px;
+			max-height: 80px;
 		}
 	}
 }

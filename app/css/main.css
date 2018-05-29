@@ -327,15 +327,15 @@ body {
 /**/
 @font-face {
   font-family: "Flaticon";
-  src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.eot");
-  src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.woff") format("woff"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.ttf") format("truetype"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/88a1907a/app/fonts/flaticon/Flaticon.eot");
+  src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/88a1907a/app/fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/88a1907a/app/fonts/flaticon/Flaticon.woff") format("woff"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/88a1907a/app/fonts/flaticon/Flaticon.ttf") format("truetype"), url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/88a1907a/app/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "Flaticon";
-    src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3bd2a46f/app/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+    src: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/88a1907a/app/fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
   }
 }
 [class^="fla-"]:before, [class*=" fla-"]:before,
@@ -345,160 +345,248 @@ body {
   color: #00679e;
 }
 
-.fla-left:before {
+.fla-suitcase-1:before {
   content: "\f100";
 }
 
-.fla-interface:before {
+.fla-calendar:before {
   content: "\f101";
 }
 
-.fla-people-6:before {
+.fla-box:before {
   content: "\f102";
 }
 
-.fla-time-2:before {
+.fla-suitcase:before {
   content: "\f103";
 }
 
-.fla-people-5:before {
+.fla-stats:before {
   content: "\f104";
 }
 
-.fla-travel:before {
+.fla-document-with-tables:before {
   content: "\f105";
 }
 
-.fla-people-4:before {
+.fla-tie:before {
   content: "\f106";
 }
 
-.fla-people-3:before {
+.fla-pyramid:before {
   content: "\f107";
 }
 
-.fla-time-1:before {
+.fla-binocoulars:before {
   content: "\f108";
 }
 
-.fla-man-1:before {
+.fla-office-buildings:before {
   content: "\f109";
 }
 
-.fla-circle:before {
+.fla-folders:before {
   content: "\f10a";
 }
 
-.fla-magnifying-glass:before {
+.fla-computer:before {
   content: "\f10b";
 }
 
-.fla-time:before {
+.fla-business-3:before {
   content: "\f10c";
 }
 
-.fla-transport:before {
+.fla-clock-1:before {
   content: "\f10d";
 }
 
-.fla-graphic-1:before {
+.fla-arrows:before {
   content: "\f10e";
 }
 
-.fla-map-location:before {
+.fla-file:before {
   content: "\f10f";
 }
 
-.fla-money:before {
+.fla-people-8:before {
   content: "\f110";
 }
 
-.fla-business-2:before {
+.fla-squares:before {
   content: "\f111";
 }
 
-.fla-hands:before {
+.fla-scale:before {
   content: "\f112";
 }
 
-.fla-pen:before {
+.fla-commerce:before {
   content: "\f113";
 }
 
-.fla-technology-3:before {
+.fla-write:before {
   content: "\f114";
 }
 
-.fla-business-1:before {
+.fla-people-7:before {
   content: "\f115";
 }
 
-.fla-clock:before {
+.fla-left:before {
   content: "\f116";
 }
 
-.fla-technology-2:before {
+.fla-interface:before {
   content: "\f117";
 }
 
-.fla-man:before {
+.fla-people-6:before {
   content: "\f118";
 }
 
-.fla-statistics:before {
+.fla-time-2:before {
   content: "\f119";
 }
 
-.fla-loudspeaker:before {
+.fla-people-5:before {
   content: "\f11a";
 }
 
-.fla-arrow:before {
+.fla-travel:before {
   content: "\f11b";
 }
 
-.fla-education:before {
+.fla-people-4:before {
   content: "\f11c";
 }
 
-.fla-square:before {
+.fla-people-3:before {
   content: "\f11d";
 }
 
-.fla-technology-1:before {
+.fla-time-1:before {
   content: "\f11e";
 }
 
-.fla-coins:before {
+.fla-man-1:before {
   content: "\f11f";
 }
 
-.fla-technology:before {
+.fla-circle:before {
   content: "\f120";
 }
 
-.fla-people-2:before {
+.fla-magnifying-glass:before {
   content: "\f121";
 }
 
-.fla-looking:before {
+.fla-time:before {
   content: "\f122";
 }
 
-.fla-business:before {
+.fla-transport:before {
   content: "\f123";
 }
 
-.fla-people-1:before {
+.fla-graphic-1:before {
   content: "\f124";
 }
 
-.fla-people:before {
+.fla-map-location:before {
   content: "\f125";
 }
 
-.fla-graphic:before {
+.fla-money:before {
   content: "\f126";
+}
+
+.fla-business-2:before {
+  content: "\f127";
+}
+
+.fla-hands:before {
+  content: "\f128";
+}
+
+.fla-pen:before {
+  content: "\f129";
+}
+
+.fla-technology-3:before {
+  content: "\f12a";
+}
+
+.fla-business-1:before {
+  content: "\f12b";
+}
+
+.fla-clock:before {
+  content: "\f12c";
+}
+
+.fla-technology-2:before {
+  content: "\f12d";
+}
+
+.fla-man:before {
+  content: "\f12e";
+}
+
+.fla-statistics:before {
+  content: "\f12f";
+}
+
+.fla-loudspeaker:before {
+  content: "\f130";
+}
+
+.fla-arrow:before {
+  content: "\f131";
+}
+
+.fla-education:before {
+  content: "\f132";
+}
+
+.fla-square:before {
+  content: "\f133";
+}
+
+.fla-technology-1:before {
+  content: "\f134";
+}
+
+.fla-coins:before {
+  content: "\f135";
+}
+
+.fla-technology:before {
+  content: "\f136";
+}
+
+.fla-people-2:before {
+  content: "\f137";
+}
+
+.fla-looking:before {
+  content: "\f138";
+}
+
+.fla-business:before {
+  content: "\f139";
+}
+
+.fla-people-1:before {
+  content: "\f13a";
+}
+
+.fla-people:before {
+  content: "\f13b";
+}
+
+.fla-graphic:before {
+  content: "\f13c";
 }
 
 /*======================================================================*\
@@ -942,11 +1030,12 @@ body {
   margin-top: 24px;
 }
 .l-logos .c-logo {
-  padding: 10px;
+  padding: 10px 20px;
 }
 .l-logos .c-logo img {
   width: 100%;
   max-width: 150px;
+  max-height: 80px;
 }
 
 /*======================================================================*\
