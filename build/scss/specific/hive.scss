@@ -50,16 +50,21 @@
 	@media screen and (max-width: $break-M) {
 	    padding-top: 65px !important;
 	}
+
+	&.white--soft{
+		background-color: #fff;
+	}
+
+	.homepage-container{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
+	.ne-event-cover{
+		display: none !important;
+	}
 }
 
-.homepage-network__container .homepage-container{
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
-}
-
-.homepage-network__container .ne-event-cover{
-	display: none !important;
-}
 
 .network__footer .homepage-container{
 	max-width: $maxW;

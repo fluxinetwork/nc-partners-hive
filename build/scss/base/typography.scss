@@ -155,13 +155,28 @@ $h6-font-sizes: (
 
 .content p a,
 .content li a {
+	
 	color: $c-main !important;
-	font-weight: 900;
-	text-decoration: underline;
+	font-weight: bold;
+	text-decoration: none !important;
+	display: inline-block;
+
+	&:after {
+	    content: '';
+	    display: block;
+	    width: 100%;
+	    height: 2px;
+	    background: $c-accent;
+	    transition: width .3s;
+	}
 
 	&:hover {
-		color: $c-accent !important;
-		text-decoration: none;
+		color: $c-main !important;
+		text-decoration: none !important;
+
+		&:after {
+			width: 0;
+		}
 	}
 }
 

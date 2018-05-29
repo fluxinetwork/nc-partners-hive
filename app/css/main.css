@@ -311,13 +311,27 @@ body {
 .content p a,
 .content li a {
   color: #46555f !important;
-  font-weight: 900;
-  text-decoration: underline;
+  font-weight: bold;
+  text-decoration: none !important;
+  display: inline-block;
+}
+.content p a:after,
+.content li a:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #00679e;
+  transition: width .3s;
 }
 .content p a:hover,
 .content li a:hover {
-  color: #00679e !important;
-  text-decoration: none;
+  color: #46555f !important;
+  text-decoration: none !important;
+}
+.content p a:hover:after,
+.content li a:hover:after {
+  width: 0;
 }
 
 .content .title-1, .content .sectionTitle, .content .title-2, .content .title-3, .content .heroCta .c-button, .heroCta .content .c-button, .content .title-4, .content .c-button, .content .title-5, .content .title-6 {
@@ -889,7 +903,7 @@ body {
   left: 0;
   top: 0;
   z-index: 1;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .l-cta .l-flexGrid__item:last-child {
   margin-top: 40px;
@@ -1062,6 +1076,11 @@ body {
   background-color: #00679e;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .c-button.-white {
   background-color: #fff;
@@ -1394,12 +1413,13 @@ h3.c-cardTitle:after {
     padding-top: 65px !important;
   }
 }
-
+.homepage-network__container.white--soft {
+  background-color: #fff;
+}
 .homepage-network__container .homepage-container {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
-
 .homepage-network__container .ne-event-cover {
   display: none !important;
 }
@@ -1462,7 +1482,6 @@ h3.c-cardTitle:after {
 ==========================================================================
 \*======================================================================*/
 .custom-bg-color-footer.custom-color-footer-links.network__footer div {
-  /*font-family: 'Open Sans Light', sans-serif;*/
   font-weight: normal;
 }
 
@@ -1474,9 +1493,6 @@ h3.c-cardTitle:after {
   text-decoration: underline;
 }
 
-/*.homepage-container.lap-and-up--soft--sides .custom-color-footer-links{
-	color: #63737e !important;
-}*/
 .content.--intro {
   max-width: 700px;
   margin-top: 40px;

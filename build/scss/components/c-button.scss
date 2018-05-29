@@ -25,6 +25,11 @@
 		background-color: $c-hover;
 		@include shadow();
 		text-shadow: 0 0 20px rgba(#fff, 0.5);
+		-webkit-transform : scale(1.1);
+		-moz-transform : scale(1.1);
+		-ms-transform : scale(1.1);
+		-o-transform : scale(1.1);
+		transform : scale(1.1);
 	}
 
 	&.-white {
