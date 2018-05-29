@@ -53,7 +53,8 @@
 	}
 
 	@media screen and (min-width: $break-M) {
-		&.-imgBg-1{		
+		&.-imgBg-1{
+			display: block;
 			overflow: hidden;
 			border: none;
 			min-height: 250px;
@@ -62,7 +63,8 @@
 			background-repeat: no-repeat;
 		}
 
-		&.-imgBg-2{		
+		&.-imgBg-2{
+			display: block;
 			overflow: hidden;
 			border: none;
 			min-height: 250px;

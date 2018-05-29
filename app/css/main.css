@@ -1052,6 +1052,7 @@ body {
 }
 @media screen and (min-width: 700px) {
   .c-card.-imgBg-1 {
+    display: block;
     overflow: hidden;
     border: none;
     min-height: 250px;
@@ -1060,6 +1061,7 @@ body {
     background-repeat: no-repeat;
   }
   .c-card.-imgBg-2 {
+    display: block;
     overflow: hidden;
     border: none;
     min-height: 250px;
