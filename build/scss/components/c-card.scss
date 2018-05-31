@@ -10,6 +10,7 @@
 	border:1px solid $c-light;
 	padding: $space-M;
 	margin-top: $space-M;
+	background-color: #fff;
 	
 	@media screen and (min-width: $break-M) {
 		padding: $space-L;
@@ -68,7 +69,7 @@
 			overflow: hidden;
 			border: none;
 			min-height: 250px;
-			background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg');
+			background: url('https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes-card.jpg');
 			background-size: cover;
 			background-repeat: no-repeat;
 		}

@@ -1131,6 +1131,7 @@ body {
   border: 1px solid #d4d8da;
   padding: 24px;
   margin-top: 24px;
+  background-color: #fff;
 }
 @media screen and (min-width: 700px) {
   .c-card {
@@ -1193,7 +1194,7 @@ body {
     overflow: hidden;
     border: none;
     min-height: 250px;
-    background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg");
+    background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes-card.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
