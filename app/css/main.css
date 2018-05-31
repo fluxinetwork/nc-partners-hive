@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 FLEX
 --
@@ -1033,18 +1034,18 @@ body {
 .l-cases .content .title-3:first-child, .l-cases .content .heroCta .c-button:first-child, .heroCta .l-cases .content .c-button:first-child {
   margin-top: 0;
 }
-.l-cases .content .c-card.-imgCard {
+.l-cases .content .c-card.--imgCard {
   display: block;
   padding: 0;
   overflow: hidden;
   border-radius: 50%;
 }
 @media screen and (max-width: 700px) {
-  .l-cases .content .c-card.-imgCard {
+  .l-cases .content .c-card.--imgCard {
     max-width: 410px;
     margin: 0 auto;
   }
-  .l-cases .content .c-card.-imgCard img {
+  .l-cases .content .c-card.--imgCard img {
     display: block;
     width: 100%;
   }
@@ -1171,7 +1172,7 @@ body {
 .c-card.-exp .citation:first-child {
   margin-top: 0;
 }
-.c-card.-imgCard {
+.c-card.--imgCard {
   overflow: hidden;
   border: none;
   padding: 0;
@@ -1193,8 +1194,8 @@ body {
     display: block;
     overflow: hidden;
     border: none;
-    min-height: 250px;
-    background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes-card.jpg");
+    min-height: 476px;
+    background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/e965661a/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes-card.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1464,18 +1465,6 @@ h3.c-cardTitle:after {
 /*======================================================================*\
 ==========================================================================
 
-							HOMEPAGE
-
-==========================================================================
-\*======================================================================*/
-.homepage__cover {
-  height: 0;
-  display: none;
-}
-
-/*======================================================================*\
-==========================================================================
-
 								HEADER
 
 ==========================================================================
@@ -1516,6 +1505,18 @@ h3.c-cardTitle:after {
 
 .custom-bg-color-footer.custom-color-footer-links.network__footer a:hover {
   text-decoration: underline;
+}
+
+/*======================================================================*\
+==========================================================================
+
+							HOMEPAGE
+
+==========================================================================
+\*======================================================================*/
+.homepage__cover {
+  height: 0;
+  display: none;
 }
 
 .content.--intro {
@@ -1619,3 +1620,175 @@ h3.c-cardTitle:after {
 		margin-top: -$space-XL*0.3; 	
 	}
 }*/
+.--quatro .l-flexGrid__item:first-child {
+  margin-right: 0;
+}
+.--quatro .l-flexGrid__item:last-child {
+  margin-left: 0;
+}
+.--quatro .--imgCard {
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  display: block;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.modalContent .--imgRound {
+  width: inherit;
+  height: inherit;
+}
+
+/**
+ * Featherlight – ultra slim jQuery lightbox
+ * Version 1.7.13 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2018, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+html.with-featherlight {
+  /* disable global scrolling when featherlights are visible */
+  overflow: hidden;
+}
+
+.featherlight {
+  display: none;
+  /* dimensions: spanning the background from edge to edge */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2147483647;
+  /* z-index needs to be >= elements on the site. */
+  /* position: centering content */
+  text-align: center;
+  /* insures that the ::before pseudo element doesn't force wrap with fixed width content; */
+  white-space: nowrap;
+  /* styling */
+  cursor: pointer;
+  background: #333;
+  /* IE8 "hack" for nested featherlights */
+  background: transparent;
+}
+
+/* support for nested featherlights. Does not work in IE8 (use JS to fix) */
+.featherlight:last-of-type {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.featherlight:before {
+  /* position: trick to center content vertically */
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.featherlight .featherlight-content {
+  /* make content container for positioned elements (close button) */
+  position: relative;
+  /* position: centering vertical and horizontal */
+  text-align: left;
+  vertical-align: middle;
+  display: inline-block;
+  /* dimensions: cut off images */
+  overflow: auto;
+  padding: 40px 40px 0;
+  border-bottom: 40px solid transparent;
+  /* dimensions: handling large content */
+  margin-left: 5%;
+  margin-right: 5%;
+  max-height: 95%;
+  /* styling */
+  background: #fff;
+  cursor: auto;
+  /* reset white-space wrapping */
+  white-space: normal;
+}
+
+/* contains the content */
+.featherlight .featherlight-inner {
+  /* make sure its visible */
+  display: block;
+}
+
+/* don't show these though */
+.featherlight script.featherlight-inner,
+.featherlight link.featherlight-inner,
+.featherlight style.featherlight-inner {
+  display: none;
+}
+
+.featherlight .featherlight-close-icon {
+  /* position: centering vertical and horizontal */
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  /* dimensions: 25px x 25px */
+  line-height: 25px;
+  width: 25px;
+  /* styling */
+  cursor: pointer;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  /* Set the background in case it overlaps the content */
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  border: none;
+  padding: 0;
+}
+
+/* See http://stackoverflow.com/questions/16077341/how-to-reset-all-default-styles-of-the-html5-button-element */
+.featherlight .featherlight-close-icon::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.featherlight .featherlight-image {
+  /* styling */
+  width: 100%;
+}
+
+.featherlight-iframe .featherlight-content {
+  /* removed the border for image croping since iframe is edge to edge */
+  border-bottom: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.featherlight iframe {
+  /* styling */
+  border: none;
+}
+
+.featherlight * {
+  /* See https://github.com/noelboss/featherlight/issues/42 */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* handling phones and small screens */
+@media only screen and (max-width: 1024px) {
+  .featherlight .featherlight-content {
+    /* dimensions: maximize lightbox with for small screens */
+    margin-left: 0;
+    margin-right: 0;
+    max-height: 98%;
+    padding: 20px 20px 0;
+    border-bottom: 20px solid transparent;
+  }
+}
+/* hide non featherlight items when printing */
+@media print {
+  html.with-featherlight > * > :not(.featherlight) {
+    display: none;
+  }
+}
+.featherlight-content {
+  max-width: 960px;
+}
