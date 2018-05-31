@@ -1632,12 +1632,31 @@ h3.c-cardTitle:after {
   padding: 0;
   display: block;
   border-radius: 50%;
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 220px;
+}
+@media screen and (min-width: 700px) {
+  .--quatro .--imgCard {
+    margin: 20px;
+    max-width: 410px;
+  }
 }
 
 .modalContent .--imgRound {
   width: inherit;
   height: inherit;
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 700px) {
+  .modalContent .--imgRound {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+.modalContent h3.title-3, .modalContent .heroCta h3.c-button, .heroCta .modalContent h3.c-button {
+  margin-top: 20px;
 }
 
 /**
@@ -1723,13 +1742,14 @@ html.with-featherlight {
 
 .featherlight .featherlight-close-icon {
   /* position: centering vertical and horizontal */
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   top: 0;
   right: 0;
   /* dimensions: 25px x 25px */
-  line-height: 25px;
-  width: 25px;
+  line-height: 40px;
+  width: 40px;
+  font-size: 35px;
   /* styling */
   cursor: pointer;
   text-align: center;
@@ -1737,9 +1757,14 @@ html.with-featherlight {
   background: #fff;
   /* Set the background in case it overlaps the content */
   background: rgba(255, 255, 255, 0.3);
-  color: #000;
+  color: #46555f;
   border: none;
   padding: 0;
+}
+@media screen and (min-width: 700px) {
+  .featherlight .featherlight-close-icon {
+    position: absolute;
+  }
 }
 
 /* See http://stackoverflow.com/questions/16077341/how-to-reset-all-default-styles-of-the-html5-button-element */

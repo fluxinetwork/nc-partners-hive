@@ -16,16 +16,33 @@
 		padding: 0;
 		display: block;
 		border-radius: 50%;
-		margin: $gutter/2;
+		margin: $gutter/2 auto;
+		max-width: 220px;
+		@media screen and (min-width: $break-M) {
+			margin: $gutter/2;
+			max-width: 410px;
+		}
 	}	
 }
 .modalContent{
 	.--imgRound{
 		width: inherit;
-		height: inherit;		
-	}
-}
+		height: inherit;
+		display: block;
+		max-width: 300px;
+		margin: 0 auto;
 
+		@media screen and (min-width: $break-M) {
+			max-width: 100%;
+			margin: 0;
+		}		
+	}
+
+	h3.title-3{		
+		margin-top: $gutter/2;		
+	}
+
+}
 
 /**
  * Featherlight – ultra slim jQuery lightbox
@@ -116,14 +133,15 @@ html.with-featherlight {
 
 .featherlight .featherlight-close-icon {
 	/* position: centering vertical and horizontal */
-	position: absolute;
+	position: fixed;
 	z-index: 9999;
 	top: 0;
 	right: 0;
 
 	/* dimensions: 25px x 25px */
-	line-height: 25px;
-	width: 25px;
+	line-height: 40px;
+	width: 40px;
+	font-size: 35px;
 
 	/* styling */
 	cursor: pointer;
@@ -131,9 +149,13 @@ html.with-featherlight {
 	font-family: Arial, sans-serif;
 	background: #fff; /* Set the background in case it overlaps the content */
 	background: rgba(255, 255, 255, 0.3);
-	color: #000;
+	color: $c-main;
 	border: none;
 	padding: 0;
+
+	@media screen and (min-width: $break-M) {
+		position: absolute;
+	}
 }
 
 /* See http://stackoverflow.com/questions/16077341/how-to-reset-all-default-styles-of-the-html5-button-element */
