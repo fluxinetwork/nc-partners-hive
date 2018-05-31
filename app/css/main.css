@@ -798,6 +798,10 @@ body {
   }
 }
 
+.--noPdBot {
+  padding-bottom: 0;
+}
+
 .l-center {
   display: flex;
   justify-content: center;
