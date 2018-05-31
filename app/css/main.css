@@ -1257,6 +1257,10 @@ h3.c-cardTitle:after {
   background-color: #7f98d4;
 }
 
+.c-chartLegende li:nth-child(5) .c-chartLegende__dot:before {
+  background-color: #A2B4DB;
+}
+
 .--chart h3.title-3, .--chart .heroCta h3.c-button, .heroCta .--chart h3.c-button {
   margin-top: 0;
 }
@@ -1324,7 +1328,7 @@ h3.c-cardTitle:after {
   background-position: bottom;
 }
 .hero#hero__talents:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/dd3f4cf8/app/img/NC-Partners-OnDemand-bg-talents.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3e6c797a/app/img/NC-Partners-OnDemand-bg-resumer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
