@@ -200,7 +200,7 @@ body {
   }
 }
 
-.title-4, .c-button, h4.title-4, h4.c-button {
+.title-4, .c-button, a.advisor .title-3, a.advisor .heroCta .c-button, .heroCta a.advisor .c-button, h4.title-4, h4.c-button, a.advisor h4.title-3, a.advisor .heroCta h4.c-button, .heroCta a.advisor h4.c-button {
   font-size: 16px;
   font-family: "Fjalla One", sans-serif, sans-serif;
   margin: 24px 0 0;
@@ -208,12 +208,12 @@ body {
   font-weight: normal;
 }
 @media screen and (min-width: 700px) {
-  .title-4, .c-button, h4.title-4, h4.c-button {
+  .title-4, .c-button, a.advisor .title-3, a.advisor .heroCta .c-button, .heroCta a.advisor .c-button, h4.title-4, h4.c-button, a.advisor h4.title-3, a.advisor .heroCta h4.c-button, .heroCta a.advisor h4.c-button {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 960px) {
-  .title-4, .c-button, h4.title-4, h4.c-button {
+  .title-4, .c-button, a.advisor .title-3, a.advisor .heroCta .c-button, .heroCta a.advisor .c-button, h4.title-4, h4.c-button, a.advisor h4.title-3, a.advisor .heroCta h4.c-button, .heroCta a.advisor h4.c-button {
     font-size: 20px;
   }
 }
@@ -306,7 +306,7 @@ body {
 }
 .content ul li, .content ol li {
   margin-top: 0.4em;
-  line-height: 1.1;
+  line-height: normal;
 }
 
 .content p a,
@@ -335,7 +335,7 @@ body {
   width: 0;
 }
 
-.content .title-1, .content .sectionTitle, .content .title-2, .content .title-3, .content .heroCta .c-button, .heroCta .content .c-button, .content .title-4, .content .c-button, .content .title-5, .content .title-6 {
+.content .title-1, .content .sectionTitle, .content .title-2, .content .title-3, .content .heroCta .c-button, .heroCta .content .c-button, .content .title-4, .content .c-button, .content a.advisor .title-3, a.advisor .content .title-3, .content a.advisor .heroCta .c-button, a.advisor .heroCta .content .c-button, .content .heroCta a.advisor .c-button, .heroCta a.advisor .content .c-button, .content .title-5, .content .title-6 {
   margin-bottom: 0;
 }
 
@@ -1307,41 +1307,41 @@ h3.c-cardTitle:after {
   }
 }
 .hero#hero__home:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-home.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0cb122b6/app/img/NC-Partners-OnDemand-bg-home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .hero#hero__consulting:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-consulting.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0cb122b6/app/img/NC-Partners-OnDemand-bg-consulting.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .hero#hero__management:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-management.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0cb122b6/app/img/NC-Partners-OnDemand-bg-management.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 .hero#hero__quiNousSommes:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0cb122b6/app/img/NC-Partners-OnDemand-bg-qui-nous-sommes.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .hero#hero__modeEmploi:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0e287151/app/img/NC-Partners-OnDemand-bg-mode-emploi.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0cb122b6/app/img/NC-Partners-OnDemand-bg-mode-emploi.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 .hero#hero__talents:before {
-  background: url("../img/NC-Partners-OnDemand-bg-resumer.jpg");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0cb122b6/app/img/NC-Partners-OnDemand-bg-resumer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 .hero:after {
   content: "";
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/9f4cf653/app/img/NC-Partners-OnDemand-texture5.png");
+  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0cb122b6/app/img/NC-Partners-OnDemand-texture5.png");
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
@@ -1624,6 +1624,9 @@ h3.c-cardTitle:after {
 		margin-top: -$space-XL*0.3; 	
 	}
 }*/
+.--quatro {
+  margin-top: 40px;
+}
 .--quatro .l-flexGrid__item:first-child {
   margin-right: 0;
 }
@@ -1644,6 +1647,14 @@ h3.c-cardTitle:after {
     margin: 20px;
     max-width: 410px;
   }
+}
+
+a.advisor {
+  color: #46555f;
+  text-decoration: none;
+}
+a.advisor .title-3, a.advisor .heroCta .c-button, .heroCta a.advisor .c-button {
+  text-align: center;
 }
 
 .modalContent .--imgRound {
