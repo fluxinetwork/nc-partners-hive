@@ -1334,7 +1334,7 @@ h3.c-cardTitle:after {
   background-position: bottom;
 }
 .hero#hero__talents:before {
-  background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/3e6c797a/app/img/NC-Partners-OnDemand-bg-resumer.jpg");
+  background: url("../img/NC-Partners-OnDemand-bg-resumer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
