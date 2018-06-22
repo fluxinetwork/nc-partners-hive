@@ -10,16 +10,27 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	margin-top: $space-M;
 
-	.c-logo{	
-		
+	@media screen and (min-width: $break-M) {
+		flex-wrap: nowrap;
+	}
+
+	.c-logo{
+
+		width: 50%;		
 		padding: $gutter/4 $gutter/2;
+
+		@media screen and (min-width: $break-M) {
+			width: inherit;
+		}
 
 		img{
 			width: 100%;
 			max-width: 150px;
 			max-height: 80px;
+			margin: 0 auto;
 		}
 	}
 }

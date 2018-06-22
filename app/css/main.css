@@ -1174,15 +1174,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 24px;
 }
+@media screen and (min-width: 700px) {
+  .l-logos {
+    flex-wrap: nowrap;
+  }
+}
 .l-logos .c-logo {
+  width: 50%;
   padding: 10px 20px;
+}
+@media screen and (min-width: 700px) {
+  .l-logos .c-logo {
+    width: inherit;
+  }
 }
 .l-logos .c-logo img {
   width: 100%;
   max-width: 150px;
   max-height: 80px;
+  margin: 0 auto;
 }
 
 /*======================================================================*\
