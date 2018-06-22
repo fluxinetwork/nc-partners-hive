@@ -65,6 +65,109 @@ Make background with :after and fancy shadow with :before
 /*======================================================================*\
 ==========================================================================
 
+							UTILS : COLORS
+
+==========================================================================
+\*======================================================================*/
+.c-main {
+  color: #46555f !important;
+}
+
+.bg-main {
+  background-color: #46555f !important;
+}
+
+.c-accent {
+  color: #00679e !important;
+}
+
+.bg-accent {
+  background-color: #00679e !important;
+}
+
+.c-dark {
+  color: #132345 !important;
+}
+
+.bg-dark {
+  background-color: #132345 !important;
+}
+
+.c-light {
+  color: #d4d8da !important;
+}
+
+.bg-light {
+  background-color: #d4d8da !important;
+}
+
+.c-txt {
+  color: #46555f !important;
+}
+
+.bg-txt {
+  background-color: #46555f !important;
+}
+
+.c-valid {
+  color: #00C15F !important;
+}
+
+.bg-valid {
+  background-color: #00C15F !important;
+}
+
+.c-error {
+  color: #F13636 !important;
+}
+
+.bg-error {
+  background-color: #F13636 !important;
+}
+
+.c-facebook {
+  color: #3b5998 !important;
+}
+
+.bg-facebook {
+  background-color: #3b5998 !important;
+}
+
+.c-twitter {
+  color: #1da1f2 !important;
+}
+
+.bg-twitter {
+  background-color: #1da1f2 !important;
+}
+
+.c-linkedin {
+  color: #0077b5 !important;
+}
+
+.bg-linkedin {
+  background-color: #0077b5 !important;
+}
+
+.c-youtube {
+  color: #cd201f !important;
+}
+
+.bg-youtube {
+  background-color: #cd201f !important;
+}
+
+.c-white {
+  color: #fff !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+/*======================================================================*\
+==========================================================================
+
 								RESET
 
 ==========================================================================
@@ -995,21 +1098,21 @@ body {
 
 ==========================================================================
 \*======================================================================*/
-.l-cases .content {
+.l-cases .content, .l-who .content {
   margin: 64px 0;
   padding: 0 0 64px;
   position: relative;
 }
 @media screen and (min-width: 700px) {
-  .l-cases .content {
+  .l-cases .content, .l-who .content {
     margin: 96px 0;
     padding: 0 0 96px;
   }
 }
-.l-cases .content.--noMgTop {
+.l-cases .content.--noMgTop, .l-who .content.--noMgTop {
   margin-top: 0;
 }
-.l-cases .content:before {
+.l-cases .content:before, .l-who .content:before {
   content: "";
   width: 200px;
   height: 1px;
@@ -1020,39 +1123,44 @@ body {
   z-index: 1;
 }
 @media screen and (min-width: 700px) {
-  .l-cases .content:before {
+  .l-cases .content:before, .l-who .content:before {
     width: 470px;
     left: calc(50% - 235px);
   }
 }
-.l-cases .content:last-child {
+.l-cases .content:last-child, .l-who .content:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-.l-cases .content:last-child:before {
+.l-cases .content:last-child:before, .l-who .content:last-child:before {
   display: none;
 }
-.l-cases .content .title-3, .l-cases .content .heroCta .c-button, .heroCta .l-cases .content .c-button {
+.l-cases .content .title-3, .l-who .content .title-3, .l-cases .content .heroCta .c-button, .heroCta .l-cases .content .c-button, .l-who .content .heroCta .c-button, .heroCta .l-who .content .c-button {
   margin-bottom: 0;
 }
-.l-cases .content .title-3:first-child, .l-cases .content .heroCta .c-button:first-child, .heroCta .l-cases .content .c-button:first-child {
+.l-cases .content .title-3:first-child, .l-who .content .title-3:first-child, .l-cases .content .heroCta .c-button:first-child, .heroCta .l-cases .content .c-button:first-child, .l-who .content .heroCta .c-button:first-child, .heroCta .l-who .content .c-button:first-child {
   margin-top: 0;
 }
-.l-cases .content .c-card.--imgCard {
+.l-cases .content .c-card.--imgCard, .l-who .content .c-card.--imgCard {
   display: block;
   padding: 0;
   overflow: hidden;
   border-radius: 50%;
 }
 @media screen and (max-width: 700px) {
-  .l-cases .content .c-card.--imgCard {
+  .l-cases .content .c-card.--imgCard, .l-who .content .c-card.--imgCard {
     max-width: 410px;
     margin: 0 auto;
   }
-  .l-cases .content .c-card.--imgCard img {
+  .l-cases .content .c-card.--imgCard img, .l-who .content .c-card.--imgCard img {
     display: block;
     width: 100%;
   }
+}
+
+.l-who .c-card.--imgCard {
+  width: 220px;
+  margin: 0 auto;
 }
 
 /*======================================================================*\
@@ -1653,8 +1761,14 @@ a.advisor {
   color: #46555f;
   text-decoration: none;
 }
+a.advisor img {
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
 a.advisor .title-3, a.advisor .heroCta .c-button, .heroCta a.advisor .c-button {
   text-align: center;
+}
+a.advisor:hover .--imgCard img {
+  transform: scale(1.1);
 }
 
 .modalContent .--imgRound {

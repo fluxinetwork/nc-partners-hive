@@ -23,7 +23,7 @@
 		@media screen and (min-width: $break-M) {
 			margin: $gutter/2;
 			max-width: 410px;
-		}
+		}			
 	}	
 }
 
@@ -31,9 +31,20 @@ a.advisor{
 	color: $c-main;
 	text-decoration: none;
 
+	img{
+		transition: all 0.2s $easeInOutQuad;
+	}
+
 	.title-3{
 		@extend .title-4;
 		text-align: center;
+	}
+
+	&:hover{
+		.--imgCard img{
+			transform: scale(1.1);
+		}
+
 	}
 }
 

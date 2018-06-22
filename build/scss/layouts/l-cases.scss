@@ -74,3 +74,12 @@
 		}
 	}
 }
+
+.l-who{
+	@extend .l-cases;
+
+	.c-card.--imgCard{
+		width: 220px;
+		margin:0 auto;
+	}
+}
