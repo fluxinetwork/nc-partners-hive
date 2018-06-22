@@ -1432,6 +1432,9 @@ h3.c-cardTitle:after {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.hero#hero__home p.c-white {
+  margin-top: 20px;
+}
 .hero#hero__consulting:before {
   background: url("https://cdn.rawgit.com/fluxinetwork/nc-partners-hive/0cb122b6/app/img/NC-Partners-OnDemand-bg-consulting.jpg");
   background-size: cover;
