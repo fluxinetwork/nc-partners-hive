@@ -30,6 +30,7 @@
 a.advisor{
 	color: $c-main;
 	text-decoration: none;
+	display: block;
 
 	img{
 		transition: all 0.2s $easeInOutQuad;

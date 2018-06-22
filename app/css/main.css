@@ -1760,6 +1760,7 @@ h3.c-cardTitle:after {
 a.advisor {
   color: #46555f;
   text-decoration: none;
+  display: block;
 }
 a.advisor img {
   transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
