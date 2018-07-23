@@ -1,0 +1,17 @@
+.form-talent{
+
+	max-width: $break-M;
+	margin: $gutter auto; 
+	padding: $gutter;
+
+	form label{
+		display: block;
+		cursor: default;
+		font-weight: 600;
+		margin-top: $space-S;
+	}
+
+	form input, form textarea{
+		display: block;		
+	}
+}

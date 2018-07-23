@@ -1963,3 +1963,18 @@ html.with-featherlight {
 .featherlight-content {
   max-width: 960px;
 }
+
+.form-talent {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 40px;
+}
+.form-talent form label {
+  display: block;
+  cursor: default;
+  font-weight: 600;
+  margin-top: 16px;
+}
+.form-talent form input, .form-talent form textarea {
+  display: block;
+}
