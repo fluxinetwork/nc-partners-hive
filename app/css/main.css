@@ -1978,3 +1978,7 @@ html.with-featherlight {
 .form-talent form input, .form-talent form textarea {
   display: block;
 }
+
+.js-page-customizable .soft--sides, .js-page-customizable .soft-double--ends{
+  padding: 0px !important;
+}
