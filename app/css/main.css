@@ -1774,6 +1774,7 @@ h3.c-cardTitle:after {
 }
 
 a.advisor {
+  text-align: center;
   color: #46555f;
   text-decoration: none;
   display: block;
